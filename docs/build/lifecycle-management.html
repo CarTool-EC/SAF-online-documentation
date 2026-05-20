@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main life-cycle management approaches for Interoperable Solutions implementation &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="eGovERA Architecture Implementation Method" href="aim.html" />
+    <link rel="prev" title="Context" href="context.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            eGovERA Solution Architecture Framework
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Main life-cycle management approaches for Interoperable Solutions implementation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-tranches">Implementation Based on Tranches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#concept-of-tranche">Concept of Tranche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#segmentation-criteria-for-tranches">Segmentation Criteria for Tranches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planning-tranches">Planning Tranches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#role-of-tranches-in-life-cycle-approaches">Role of Tranches in Life-Cycle Approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-increments">Implementation Based on Increments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#concept-of-increment">Concept of Increment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incrementation-criteria">Incrementation Criteria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planning-increments">Planning Increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#role-of-increments-in-life-cycle-approaches">Role of Increments in Life-Cycle Approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#delivery-methodologies">Delivery Methodologies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linear-waterfall-approach">Linear Waterfall Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view">Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities">Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation">Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability">Applicability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#incremental-waterfall-approach">Incremental Waterfall Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-1">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-1">Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-1">Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-1">Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-1">Applicability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#linear-agile-approach">Linear Agile Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-2">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-2">Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-2">Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-2">Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-2">Applicability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#incremental-agile-approach">Incremental Agile Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-3">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-3">Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-3">Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-3">Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-3">Applicability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#general-principles">General Principles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aim.html">eGovERA Architecture Implementation Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="saf-framework.html">eGovERA Solution Architecture Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">Usage Guidance and Methodology for an Intervention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Model Creation Supporting Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">eGovERA Solution Architecture Framework</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Main life-cycle management approaches for Interoperable Solutions implementation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/lifecycle-management.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="main-life-cycle-management-approaches-for-interoperable-solutions-implementation">
+<h1>Main life-cycle management approaches for Interoperable Solutions implementation<a class="headerlink" href="#main-life-cycle-management-approaches-for-interoperable-solutions-implementation" title="Link to this heading"></a></h1>
+<p>A practical approach to implementing interoperable digital public
+services is the application of a “divide and conquer” strategy. This
+approach addresses the inherent complexity of large-scale information
+systems by decomposing the implementation lifecycle into manageable
+parts. The architecture development using eGovERA follows a similar
+approach as the one for Software Development Lifecycle (SDLC). This can
+be split into the following steps:</p>
+<a class="reference internal image-reference" href="_images/image4.png"><img alt="_images/image4.png" src="_images/image4.png" style="width: 5.59389in; height: 3.0087in;" />
+</a>
+<p>Figure 1 Development Lifecycle Management</p>
+<p><em>Start:</em></p>
+<p>It represents the starting point where a new architecture development
+request has been requested in order to create a solution addressing the
+challenges and requirements expressed by different stakeholders. As an
+example, this could be requested by an intervention, for instance.
+Please refer to chapter 6.1 or further information about intervention’s
+processes.</p>
+<p><em>Analysis:</em></p>
+<p>The first step is to conduct the analysis phase; the purpose of this
+phase is to identify all the requirements that will drive the solution.
+These requirements are represented by Architecture Building Blocks (ABB)
+which are represented using ArchiMate elements suggested by EIRA /
+eGovERA. These requirements (and the corresponding ABBs) are created as
+part of the eGovERA model and split into the LOST views. Thus, each ABB
+will belong to one of the LOST views or the related viewpoints.</p>
+<p>It is also important to stablish the relationship between different ABBs
+within the same view or related viewpoints and also cross-view,
+depicting and establishing a clear relationship between the represented
+elements of the model. Please refer to</p>
+<p>This phase is finishing will all the requirements represented by ABB
+belonging to each LOST view or viewpoints and having the relationships
+with other ABBs.</p>
+<p>Bear in mind that this phase could be iterative, also considering the
+different development lifecycle approaches which will be explained in
+the following chapters.</p>
+<p>Please refer to chapter 4.1 for further information about the analysis
+phase.</p>
+<p><em>Testing:</em></p>
+<p>Testing and conformance is conducted through Testbed, a tool offered by
+DG DIGIT. Please refer to chapter 7.1.4 for further information.</p>
+<p>Testing depends on the phase in which the project is. It can be
+identified two different phases:</p>
+<ul class="simple">
+<li><p>Analysis/Solution Model Validation</p></li>
+</ul>
+<blockquote>
+<div><p>This validation can be achieved from the analysis and design phases
+and corresponds to validate that the model that we are creating is
+conformant with the rules stablished by EIRA and eGovERA for
+analysing and designing a solution. Testbed allows to upload the
+model and conduct this validation. It can be concluded that this
+testing is conducted through the model created to check the
+consistency, completeness and aligned with the guidelines stablish by
+EIRA and eGovERA.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Implementation Interoperability Testing (not in the scope of
+EIRA/eGovERA)</p></li>
+</ul>
+<blockquote>
+<div><p>This testing is reached from realization and composition/integration
+phases, and it is out of scope of EIRA and eGovERA. To validate that
+the Solution Building Blocks (SBBs) correctly implement the
+requirements defined by the Architecture Building Blocks (ABBs) and
+conform to the interoperability, reusability, and compliance
+principles defined in EIRA / eGovERA. This phase includes the
+definition and execution of test strategies aligned with the LOST
+views, ensuring that functional, semantic, organizational, and
+technical aspects are properly verified.</p>
+<p>Testing activities should cover unit, integration, system, and
+acceptance testing, ensuring traceability back to the originating
+ABBs. Additionally, interoperability testing plays a critical role,
+validating that cross-border and cross-domain interactions function
+as expected within the European interoperability context. Test
+results, defects, and validation outcomes should be systematically
+documented within the eGovERA model, maintaining consistency between
+architecture artifacts and implementation evidence.</p>
+<p>It can be concluded that this testing corresponds to ensure that the
+implementation of the SBB is conformant with the specifications and
+standards documented in the model.</p>
+</div></blockquote>
+<p><em>Design:</em></p>
+<p>The design phase translates the requirements captured as ABBs into a
+solution architecture by identifying the corresponding Solution Building
+Blocks (SBBs). This involves selecting, specifying, and detailing the
+components, services, data models, specifications and interfaces
+required to fulfil the identified requirements.</p>
+<p>The design is conducted using ArchiMate elements aligned with EIRA /
+eGovERA guidelines, ensuring that each SBB realizes one or more ABBs and
+that traceability is maintained across the lifecycle. Design decisions
+should consider reuse of existing building blocks, alignment with
+reference architectures, and compliance with interoperability standards.</p>
+<p>Relationships between SBBs must be clearly established within and across
+LOST views, ensuring coherence between business processes, information
+flows, application services, and technical infrastructure. The outcome
+of this phase is a complete solution architecture model.</p>
+<p>As with the analysis phase, design can be iterative, refining SBBs as
+requirements evolve or constraints are identified.</p>
+<p>Please refer to chapter 4.2 for further information about the design
+phase.</p>
+<p><em>Realization (not in scope of EIRA/eGovERA):</em></p>
+<p>The realization phase focuses on the implementation of the SBBs defined
+during the design phase. This includes the development, configuration,
+or customization of software components, services, and infrastructure
+elements required to operationalize the solution.</p>
+<p>Each SBB is realized using appropriate technologies and platforms,
+ensuring alignment with the architectural specifications and
+interoperability requirements defined in previous phases. Traceability
+between ABBs, SBBs, and implementation artifacts must be preserved,
+enabling clear linkage between requirements, design, and delivered
+components.</p>
+<p>Implementation activities should follow established development
+practices, including version control, continuous integration, and
+documentation, ensuring that the resulting components are maintainable,
+scalable, and compliant with the overall architecture.</p>
+<p><em>Composition/Integration (not in scope of EIRA/eGovERA):</em></p>
+<p>The composition and integration phase ensures that individually realized
+SBBs are assembled into a coherent and functioning system. This involves
+orchestrating and integrating components across different layers and
+LOST views, ensuring that interfaces, data exchanges, and service
+interactions are correctly implemented.</p>
+<p>Integration activities must validate that SBBs interoperate as defined
+in the architecture, particularly in cross-organizational and
+cross-border scenarios. This includes alignment with interoperability
+frameworks, data exchange standards, and security requirements defined
+by EIRA / eGovERA.</p>
+<p>The phase also includes the configuration of middleware, APIs, and
+integration mechanisms necessary to enable seamless communication
+between components. Any integration issues identified must be addressed,
+potentially triggering updates in the design or realization phases.</p>
+<p>The outcome is a fully integrated solution that reflects the
+architecture defined in the earlier phases and is ready for final
+validation and deployment.</p>
+<p><em>End (not in scope of EIRA/eGovERA):</em></p>
+<p>The end phase represents the completion of the architecture development
+and implementation lifecycle. At this stage, the solution is fully
+validated, integrated, and ready for operational use.</p>
+<p>All architectural artifacts within the eGovERA model should be
+finalized, ensuring that ABBs, SBBs, and their relationships are
+consistent, complete, and properly documented. This includes capturing
+lessons learned, documenting deviations from the initial architecture,
+and ensuring alignment with governance and compliance requirements.</p>
+<p>This phase ensures that the architecture delivers its intended value and
+remains aligned with stakeholder needs and interoperability objectives.</p>
+<p>Building on the concepts of tranches and increments, different delivery
+methodologies can be defined to organise the architecture development
+process between the analysis and design phases explained previously in
+this chapter. These methodologies combine the chosen structuring
+mechanism (tranches or increments) with a life-cycle logic (waterfall or
+agile), determining how analysis and design phases are sequenced and
+executed. The following sections present the main delivery approaches
+supported by the eGovERA methodology and explains how they can be
+applied in practice.</p>
+<section id="implementation-based-on-tranches">
+<h2>Implementation Based on Tranches<a class="headerlink" href="#implementation-based-on-tranches" title="Link to this heading"></a></h2>
+<section id="concept-of-tranche">
+<h3>Concept of Tranche<a class="headerlink" href="#concept-of-tranche" title="Link to this heading"></a></h3>
+<p>A tranche (τ) represents a concrete partial implementation of a target
+interoperable solution, typically covering both analysis and design
+activities. Each tranche contributes to the overall target information
+system while remaining largely independent and almost disjoint from
+prior tranches.</p>
+<p>This relative independence allows:</p>
+<ul class="simple">
+<li><p>flexibility in execution</p></li>
+<li><p>clear separation of concerns</p></li>
+<li><p>and the possibility to support parallel development streams</p></li>
+</ul>
+<p>Tranches are therefore particularly suited for structuring
+implementations where the solution can be decomposed into distinct,
+loosely coupled parts.</p>
+</section>
+<section id="segmentation-criteria-for-tranches">
+<h3>Segmentation Criteria for Tranches<a class="headerlink" href="#segmentation-criteria-for-tranches" title="Link to this heading"></a></h3>
+<p>Tranches are identified by selecting appropriate segmentation criteria,
+depending on the nature of the solution and the implementation strategy.</p>
+<p>Typical criteria include:</p>
+<ul class="simple">
+<li><p>By EIRA/eGovERA interoperability view</p></li>
+<li><p>By Digital Business Capability (DBC)</p></li>
+</ul>
+<p>These criteria enable structuring the implementation into coherent and
+manageable units.</p>
+</section>
+<section id="planning-tranches">
+<h3>Planning Tranches<a class="headerlink" href="#planning-tranches" title="Link to this heading"></a></h3>
+<p>Planning tranches consists of selecting one segmentation criteria and
+applying it to define a set of tranches that ensures full coverage of
+the target information system.</p>
+<p>This activity includes:</p>
+<ul class="simple">
+<li><p>identifying decomposition dimensions</p></li>
+<li><p>defining tranche boundaries</p></li>
+<li><p>ensuring minimal overlap between tranches</p></li>
+<li><p>validating that all aspects of the solution are addressed</p></li>
+</ul>
+</section>
+<section id="role-of-tranches-in-life-cycle-approaches">
+<h3>Role of Tranches in Life-Cycle Approaches<a class="headerlink" href="#role-of-tranches-in-life-cycle-approaches" title="Link to this heading"></a></h3>
+<p>Tranches are used in life-cycle approaches where the development is
+organised as a sequence of distinct segments, such as:</p>
+<ul class="simple">
+<li><p>Linear Waterfall</p></li>
+<li><p>Linear Agile</p></li>
+</ul>
+<p>In these approaches, tranches define the primary unit of progression,
+with each tranche being completed before moving to the next (with or
+without iteration, depending on the approach).</p>
+</section>
+</section>
+<section id="implementation-based-on-increments">
+<h2>Implementation Based on Increments<a class="headerlink" href="#implementation-based-on-increments" title="Link to this heading"></a></h2>
+<section id="concept-of-increment">
+<h3>Concept of Increment<a class="headerlink" href="#concept-of-increment" title="Link to this heading"></a></h3>
+<p>An increment (Δ) represents a concrete partial implementation, covering
+both analysis and design activities, of a target interoperable solution
+that is additive to all prior increments.</p>
+<p>Each increment extends the solution by building upon previous results,
+progressively increasing the completeness and maturity of the target
+information system.</p>
+<p>In contrast to tranches, increments are not independent; they are
+cumulative and interdependent.</p>
+</section>
+<section id="incrementation-criteria">
+<h3>Incrementation Criteria<a class="headerlink" href="#incrementation-criteria" title="Link to this heading"></a></h3>
+<p>Increments are defined using criteria similar to those used for tranches
+but applied in an additive manner.</p>
+<p>Typical criteria include:</p>
+<ul class="simple">
+<li><p>By EIRA/eGovERA interoperability view</p></li>
+<li><p>By Digital Business Capability (DBC)</p></li>
+</ul>
+<p>These criteria support the progressive extension of the solution scope
+or depth.</p>
+</section>
+<section id="planning-increments">
+<h3>Planning Increments<a class="headerlink" href="#planning-increments" title="Link to this heading"></a></h3>
+<p>Planning increments consists of selecting appropriate criteria and
+defining a sequence of increments that ensures full and progressive
+coverage of the target model.</p>
+<p>This activity includes:</p>
+<ul class="simple">
+<li><p>defining the order of increments</p></li>
+<li><p>ensuring logical dependency between increments</p></li>
+<li><p>ensuring consistency with previous increments</p></li>
+</ul>
+<p>The result is a roadmap for progressive solution evolution.</p>
+</section>
+<section id="role-of-increments-in-life-cycle-approaches">
+<h3>Role of Increments in Life-Cycle Approaches<a class="headerlink" href="#role-of-increments-in-life-cycle-approaches" title="Link to this heading"></a></h3>
+<p>Increments are used in life-cycle approaches where the implementation
+evolves through additive steps, such as:</p>
+<ul class="simple">
+<li><p>Incremental Waterfall</p></li>
+<li><p>Incremental Agile</p></li>
+</ul>
+<p>In these approaches, increments define the unit of progression, with
+each increment extending the solution baseline and increasing overall
+completeness.</p>
+<p>The concepts of tranches and increments provide the foundation for the
+life-cycle management approaches described in the following sections.Top
+of Form</p>
+<p>Bottom of Form</p>
+</section>
+</section>
+<section id="delivery-methodologies">
+<h2>Delivery Methodologies<a class="headerlink" href="#delivery-methodologies" title="Link to this heading"></a></h2>
+<p>This section defines the life-cycle management approaches applicable to
+the implementation of interoperable solutions within the eGovERA
+methodology. These approaches combine structuring logics (waterfall or
+agile) with segmentation mechanisms (tranches or increments) and may be
+applied using different criteria such as EIRA LOST views or Digital
+Business Capabilities.</p>
+<p>A fundamental distinction between approaches concerns the relationship
+between analysis and design activities:</p>
+<ul class="simple">
+<li><p>In waterfall approaches, analysis and design are strictly sequential.
+The analysis phase for the full scope must be completed before design
+begins.</p></li>
+<li><p>In agile approaches, analysis and design are interleaved and
+iterative, allowing design to start as soon as sufficient analysis is
+available for a given scope element.</p></li>
+</ul>
+<p>Please refer to section 8.3 for the conventions and symbols used for the
+figures depicted in the following chapters.</p>
+<section id="linear-waterfall-approach">
+<h3>Linear Waterfall Approach<a class="headerlink" href="#linear-waterfall-approach" title="Link to this heading"></a></h3>
+<section id="overview">
+<h4>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h4>
+<p>The Linear Waterfall approach structures the implementation of an
+interoperable solution as a sequence of tranches (τ), where each tranche
+represents a distinct and largely independent part of the solution.</p>
+<p>In this approach, analysis and design are strictly separated phases. All
+analysis activities are completed across all tranches before any design
+activity begins. This ensures a complete and stable understanding of
+requirements prior to design.</p>
+<a class="reference internal image-reference" href="_images/image5.png"><img alt="_images/image5.png" src="_images/image5.png" style="width: 3.74028in; height: 2.95347in;" />
+</a>
+<p>Figure 2 Linear Waterfall – Approach</p>
+<p>Tranches are defined based on selected segmentation criteria and
+collectively ensure full coverage of the target solution.</p>
+</section>
+<section id="segmentation-by-view">
+<h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view" title="Link to this heading"></a></h4>
+<p>Tranches are defined according to the EIRA LOST interoperability views
+(Legal, Organisational, Semantic, Technical – Application, Technical –
+Infrastructure).</p>
+<p>Each tranche addresses one view, and implementation progresses
+sequentially across views. The starting point may vary depending on the
+context.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>τ1: Legal</p></li>
+<li><p>τ2: Organisational</p></li>
+<li><p>τ3: Semantic</p></li>
+<li><p>τ4: Technical – Application</p></li>
+<li><p>τ5: Technical – Infrastructure</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image6.png"><img alt="_images/image6.png" src="_images/image6.png" style="width: 5.24028in; height: 0.29545in;" />
+</a>
+<p>Figure 3 Linear Waterfall – Segmentation by View</p>
+</section>
+<section id="segmentation-by-digital-business-capabilities">
+<h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities" title="Link to this heading"></a></h4>
+<p>Tranches are defined by Digital Business Capabilities (DBCs).</p>
+<p>Each tranche focuses on a specific DBC and covers all relevant
+interoperability views within that scope.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>τ1: DBC1</p></li>
+<li><p>τ2: DBC2</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image7.png"><img alt="_images/image7.png" src="_images/image7.png" style="width: 5.61389in; height: 0.84848in;" />
+</a>
+<p>Figure 4 Linear Waterfall – Segmentation by DBC</p>
+</section>
+<section id="combined-segmentation">
+<h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation" title="Link to this heading"></a></h4>
+<p>Segmentation may combine views and DBCs, enabling structured
+decomposition across both:</p>
+<ul class="simple">
+<li><p>interoperability layers</p></li>
+<li><p>functional domains</p></li>
+</ul>
+</section>
+<section id="applicability">
+<h4>Applicability<a class="headerlink" href="#applicability" title="Link to this heading"></a></h4>
+<p>This approach is suitable when:</p>
+<ul class="simple">
+<li><p>requirements are stable</p></li>
+<li><p>a predictable and controlled sequence is required</p></li>
+<li><p>full analysis must be validated before design</p></li>
+</ul>
+<p>It applies to analysis, design, or both.</p>
+</section>
+</section>
+<section id="incremental-waterfall-approach">
+<h3>Incremental Waterfall Approach<a class="headerlink" href="#incremental-waterfall-approach" title="Link to this heading"></a></h3>
+<section id="overview-1">
+<span id="id1"></span><h4>Overview<a class="headerlink" href="#overview-1" title="Link to this heading"></a></h4>
+<p>The Incremental Waterfall approach structures the implementation as a
+sequence of increments (Δ), where each increment is additive and builds
+upon previous ones.</p>
+<p>Each increment follows a waterfall logic, but analysis and design remain
+strictly separated phases at the global level. This means that analysis
+must be completed for all planned increments before design activities
+begin.</p>
+<a class="reference internal image-reference" href="_images/image8.png"><img alt="_images/image8.png" src="_images/image8.png" style="width: 3.14722in; height: 2.95347in;" />
+</a>
+<p>Figure 5 Incremental Waterfall – Approach</p>
+<p>This approach enables progressive structuring of the solution while
+preserving strong control over completeness and consistency.</p>
+</section>
+<section id="segmentation-by-view-1">
+<span id="id2"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-1" title="Link to this heading"></a></h4>
+<p>Increments are defined by progressively extending the set of EIRA LOST
+views addressed.</p>
+<p>The process may start from any view and progressively incorporates
+additional views.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>Δ1: L</p></li>
+<li><p>Δ2: L, O</p></li>
+<li><p>Δ3: L, O, S</p></li>
+<li><p>Δ4: L, O, S, Ta</p></li>
+<li><p>Δ5: L, O, S, Ta, Ti</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image9.png"><img alt="_images/image9.png" src="_images/image9.png" style="width: 6.78424in; height: 0.23485in;" />
+</a>
+<p>Figure 6 Incremental Waterfall – Segmentation by View</p>
+</section>
+<section id="segmentation-by-digital-business-capabilities-1">
+<span id="id3"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-1" title="Link to this heading"></a></h4>
+<p>Increments are defined by progressively expanding the set of Digital
+Business Capabilities.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>Δ1: DBC1</p></li>
+<li><p>Δ2: DBC1 + DBC2</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image10.png"><img alt="_images/image10.png" src="_images/image10.png" style="width: 7.91145in; height: 0.77358in;" />
+</a>
+<p>Figure 7 Incremental Waterfall – Segmentation by DBC</p>
+<p>Each increment contributes to the overall solution scope.</p>
+</section>
+<section id="combined-segmentation-1">
+<span id="id4"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-1" title="Link to this heading"></a></h4>
+<p>Both segmentation strategies may be combined, allowing progressive:</p>
+<ul class="simple">
+<li><p>completion of interoperability views</p></li>
+<li><p>expansion across domains</p></li>
+</ul>
+</section>
+<section id="applicability-1">
+<span id="id5"></span><h4>Applicability<a class="headerlink" href="#applicability-1" title="Link to this heading"></a></h4>
+<p>This approach is suitable when:</p>
+<ul class="simple">
+<li><p>progressive architecture development is needed</p></li>
+<li><p>but strict control over analysis completeness is required</p></li>
+<li><p>design must rely on a fully validated analytical baseline</p></li>
+</ul>
+</section>
+</section>
+<section id="linear-agile-approach">
+<h3>Linear Agile Approach<a class="headerlink" href="#linear-agile-approach" title="Link to this heading"></a></h3>
+<section id="overview-2">
+<span id="id6"></span><h4>Overview<a class="headerlink" href="#overview-2" title="Link to this heading"></a></h4>
+<p>The Linear Agile approach structures the implementation as a sequence of
+tranches (τ), similar to the Linear Waterfall approach, but introduces
+iterative cycles within each tranche.</p>
+<p>In this approach, analysis and design are interleaved. For each tranche,
+analysis is performed first and is immediately followed by design
+activities, which may be iterated multiple times.</p>
+<a class="reference internal image-reference" href="_images/image11.png"><img alt="_images/image11.png" src="_images/image11.png" style="width: 6.84028in; height: 1.64653in;" />
+</a>
+<p>Figure 8 Linear Agile – Approach</p>
+<p>Design activities can start without waiting for analysis to be completed
+across all tranches, enabling faster feedback and adaptation.</p>
+</section>
+<section id="segmentation-by-view-2">
+<span id="id7"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-2" title="Link to this heading"></a></h4>
+<p>Tranches may also be defined by interoperability views.</p>
+<p>Each view is analysed and designed iteratively before proceeding to the
+next.</p>
+<a class="reference internal image-reference" href="_images/image12.png"><img alt="_images/image12.png" src="_images/image12.png" style="width: 6.22083in; height: 0.72014in;" />
+</a>
+<p>Figure 9 Linear Agile – Segmentation by View</p>
+</section>
+<section id="segmentation-by-digital-business-capabilities-2">
+<span id="id8"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-2" title="Link to this heading"></a></h4>
+<p>Tranches are typically defined by Digital Business Capabilities.</p>
+<p>Each tranche is iteratively analysed and designed before moving to the
+next.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>τ1: DBC1 (analysis and design iterations)</p></li>
+<li><p>τ2: DBC2 (analysis and design iterations)</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image13.png"><img alt="_images/image13.png" src="_images/image13.png" style="width: 6.54388in; height: 1.17445in;" />
+</a>
+<p>Figure 10 Linear Agile – Segmentation by DBC</p>
+</section>
+<section id="combined-segmentation-2">
+<span id="id9"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-2" title="Link to this heading"></a></h4>
+<p>Segmentation may combine views and DBCs, enabling iterative refinement
+within:</p>
+<ul class="simple">
+<li><p>a specific domain</p></li>
+<li><p>or a specific interoperability layer</p></li>
+</ul>
+</section>
+<section id="applicability-2">
+<span id="id10"></span><h4>Applicability<a class="headerlink" href="#applicability-2" title="Link to this heading"></a></h4>
+<p>This approach is suitable when:</p>
+<ul class="simple">
+<li><p>iterative refinement is required</p></li>
+<li><p>but a sequential structure across scope elements must be maintained</p></li>
+</ul>
+</section>
+</section>
+<section id="incremental-agile-approach">
+<h3>Incremental Agile Approach<a class="headerlink" href="#incremental-agile-approach" title="Link to this heading"></a></h3>
+<section id="overview-3">
+<span id="id11"></span><h4>Overview<a class="headerlink" href="#overview-3" title="Link to this heading"></a></h4>
+<p>The Incremental Agile approach combines incremental delivery (Δ) with
+iterative development cycles.</p>
+<p>In this approach, analysis and design are interleaved within each
+increment. For each increment, analysis is performed and immediately
+followed by design, with possible iterations.</p>
+<a class="reference internal image-reference" href="_images/image14.png"><img alt="_images/image14.png" src="_images/image14.png" style="width: 6.32708in; height: 1.87361in;" />
+</a>
+<p>Figure 11 Incremental Agile – Approach</p>
+<p>Design can start as soon as sufficient analysis is available for the
+current increment, without waiting for full coverage of all increments.</p>
+</section>
+<section id="segmentation-by-view-3">
+<span id="id12"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-3" title="Link to this heading"></a></h4>
+<p>Increments may be defined by progressively incorporating
+interoperability views.</p>
+<p>Each increment adds new views and refines existing ones through
+iterations.</p>
+<a class="reference internal image-reference" href="_images/image15.png"><img alt="_images/image15.png" src="_images/image15.png" style="width: 6.84722in; height: 0.71319in;" />
+</a>
+<p>Figure 12 Incremental Agile – Segmentation by View</p>
+</section>
+<section id="segmentation-by-digital-business-capabilities-3">
+<span id="id13"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-3" title="Link to this heading"></a></h4>
+<p>Increments are defined by progressively expanding the set of Digital
+Business Capabilities.</p>
+<p>Example pattern:</p>
+<ul class="simple">
+<li><p>Δ1: DBC1</p></li>
+<li><p>Δ2: DBC1 + DBC2</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/image16.png"><img alt="_images/image16.png" src="_images/image16.png" style="width: 6.708in; height: 1.15226in;" />
+</a>
+<p>Figure 13 Incremental Agile – Segmentation by DBC</p>
+<p>Each increment is iteratively analysed and designed.</p>
+</section>
+<section id="combined-segmentation-3">
+<span id="id14"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-3" title="Link to this heading"></a></h4>
+<p>This approach allows combining:</p>
+<ul class="simple">
+<li><p>addition of interoperability views</p></li>
+<li><p>expansion across domains</p></li>
+<li><p>iterative refinement within each increment</p></li>
+</ul>
+</section>
+<section id="applicability-3">
+<span id="id15"></span><h4>Applicability<a class="headerlink" href="#applicability-3" title="Link to this heading"></a></h4>
+<p>This approach is suitable when:</p>
+<ul class="simple">
+<li><p>requirements evolve</p></li>
+<li><p>continuous feedback is needed</p></li>
+<li><p>both scope and design must be progressively refined</p></li>
+</ul>
+</section>
+</section>
+<section id="general-principles">
+<h3>General Principles<a class="headerlink" href="#general-principles" title="Link to this heading"></a></h3>
+<p>Across all approaches:</p>
+<ul class="simple">
+<li><p>Tranches (τ) represent disjoint segments of the solution</p></li>
+<li><p>Increments (Δ) represent additive evolution of the solution</p></li>
+</ul>
+<p>Segmentation criteria may include:</p>
+<ul class="simple">
+<li><p>EIRA LOST views</p></li>
+<li><p>Digital Business Capabilities</p></li>
+</ul>
+<p>The selection of an approach depends on:</p>
+<ul class="simple">
+<li><p>stability of requirements</p></li>
+<li><p>need for flexibility</p></li>
+<li><p>complexity of the solution</p></li>
+</ul>
+<p>All approaches ensure alignment with the EIRA interoperability framework
+and support structured development of interoperable solutions.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="context.html" class="btn btn-neutral float-left" title="Context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="aim.html" class="btn btn-neutral float-right" title="eGovERA Architecture Implementation Method" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
