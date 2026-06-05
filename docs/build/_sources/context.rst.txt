@@ -12,7 +12,7 @@ seamlessly across organisational and national boundaries. In doing so,
 the framework aims to improve service quality, reduce duplication, and
 strengthen cross-border collaboration. Its role extends beyond technical
 guidance, positioning interoperability as a key enabler of an integrated
-and efficient digital public sector.
+and efficient digital public sector. 
 
 To support the implementation of the EIF and its recommendations, the
 European Commission has developed a set of solutions over time such: the

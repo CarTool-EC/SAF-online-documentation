@@ -15,7 +15,9 @@ that all relevant constraints and dependencies are identified early,
 mitigating the risk of misalignment between policy intent and
 operational delivery. Building on this analytical foundation, the
 eGovernment Reference Architecture (eGovERA©) extends the process into
-the design and operational domain. By introducing greater granularity
+the design and operational domain. 
+
+By introducing greater granularity
 and domain-specific guidance, it supports decision-making and portfolio
 management, allowing administrations to move from conceptual alignment
 to actionable solution design. This progression is critical for
@@ -27,7 +29,9 @@ interoperability needs, while SBBs translate these requirements into
 implementable components or standards to be used. This traceability
 ensures that every element of the final design can be directly linked
 back to its originating requirement, reducing ambiguity and supporting
-accountability. In practice, ABBs cover elements such as applicable
+accountability. 
+
+In practice, ABBs cover elements such as applicable
 legislation, organisational capabilities, data structures, and technical
 services, while SBBs operationalise these into legal agreements,
 governance models, datasets, and application interfaces. Alignment with
@@ -35,7 +39,8 @@ the European Interoperability Framework ensures that this structured
 approach supports seamless cross-border data exchange, reducing
 duplication and enabling scalable digital public services.
 
-*Definition and Purpose of an Intervention*
+Definition and Purpose of an Intervention
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An intervention serves as a targeted mechanism to translate policy
 objectives into interoperable digital public services, ensuring that
