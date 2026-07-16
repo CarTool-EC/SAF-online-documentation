@@ -1,0 +1,155 @@
+Introduction
+============
+
+This document provides a structured specification for the design and
+implementation of interoperable digital public services within a
+European context. It establishes a consistent architectural and
+methodological foundation by leveraging the principles of European
+Interoperability Framework (EIF) to support the definition of a
+reference architecture for implementing interoperable European Digital
+Public Services named European Interoperability Reference Architecture
+(EIRA). The eGovernment European Reference Architecture (eGovERA)
+provides additional guidance to help Public Administrations design
+interoperable public services. The document aims to support the
+translation of interoperability principles into practical analysis and
+design artefacts that can be applied across public administrations. The
+specification is intended to guide stakeholders involved in policy,
+architecture, and solution delivery activities. It addresses both
+conceptual and practical aspects of interoperability, covering
+architectural analysis and design. By combining reference architectures
+with methodological guidance, the document supports the design of
+digital public services that are interoperable by design and aligned
+with European standards.
+
+The document adopts a structured approach aligned with the phases of
+Architecture Implementation Method (AIM) that reflects the lifecycle of
+interoperable solution architecture development. It begins with
+foundational context and frameworks, progresses through architecture and
+methodology, and concludes with supporting tools. This progression
+ensures that readers can move from understanding interoperability
+principles to applying them in real-world scenarios.
+
+The Interoperability Architecture Solutions portal offers courses to
+know more about EIRA and eGovERA. A list of the available courses can be
+seen on annex 8.5
+
+Purpose of this Specification
+-----------------------------
+
+This document establishes a common methodology for applying EIRA and
+eGovERA in the analysis and design of digital public services. It
+defines how architectural concepts, including Architecture Building
+Blocks (ABBs) and Solution Building Blocks (SBBs), are used to structure
+requirements and guide solution design in a consistent and traceable
+manner. It provides a methodological basis for organising the
+development of interoperable solutions, including the use of lifecycle
+management approaches and the Architecture Implementation Method (AIM).
+This supports the systematic definition, analysis, and design of digital
+public services within a structured process. The document also defines
+how governance, validation, and compliance processes are applied to
+ensure that architectural outputs align with interoperability
+requirements and regulatory constraints. This includes the use of
+conformance and compliance mechanisms within the architecture lifecycle.
+
+Scope
+-----
+
+The scope of the document focuses on the definition, design, and
+modelling of digital public services, particularly in the context of
+interventions supported by EIRA and eGovERA. It is not the scope of EIRA
+and eGovERA the implementation of the solution but provides the
+architectural inputs to enable this activity.
+
+Target Audience
+---------------
+
+This specification is designed for:
+
+-  **Policy Makers & Digital Strategy Leaders:** Responsible for
+   defining and implementing policies that satisfy the needs of European
+   Public Administrations, business and citizens.
+
+-  **Enterprise & Solution Architects:** Responsible for designing the
+   architecture to be used in Interoperable Solutions across Europe.
+
+-  **Portfolio & Programme Managers:** Maintainers of the catalogue of
+   assets and projects supporting the design and implementations of
+   Interoperable Systems across Europe.
+
+-  **Solution Providers & Project Teams:** Responsible for implementing
+   the Interoperable Systems designed by the Enterprise & Solution
+   Architects.
+
+-  **Academia & Training Organisations:** Users interested in learning
+   and sharing knowledge about interoperability initiatives across
+   Europe.
+
+Relationship to Other Frameworks and Standards
+----------------------------------------------
+
+Alignment of EIRA with EIF
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The European Interoperability Reference Architecture (EIRA) is designed
+to align closely with the European Interoperability Framework (EIF) and
+its implementation strategy. This alignment ensures that EIRA does not
+operate as a standalone model but as a practical instrument to
+operationalise EIF principles across public sector systems. EIRA
+provides a structured way to translate high-level interoperability
+objectives into concrete architectural elements. This alignment is
+embodied in EIRA’s mapping to the four EIF interoperability levels:
+legal, organisational, semantic, and technical. By embedding these
+layers directly into its structure, EIRA enables public administrations
+to address interoperability in a comprehensive manner. Legal
+interoperability is supported through components that reflect regulatory
+constraints, while organisational interoperability is addressed through
+process and governance constructs. Semantic interoperability is
+facilitated by shared data models and vocabularies, and technical
+interoperability is ensured through standardised applications and
+interfaces, and infrastructure building blocks.
+
+Alignment of EIRA with TOGAF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+EIRA incorporates core concepts from TOGAF v9.1, including architecture
+patterns, building blocks, and architectural views and viewpoints. These
+elements strengthen EIRA’s methodological foundation and improve its
+usability for practitioners familiar with established enterprise
+architecture frameworks. The use of building blocks enables modular
+design and reuse, while architectural views support communication with
+different stakeholder groups. Architecture patterns further promote
+standardisation and accelerate solution design.
+
+Alignment of EIRA with PAAF (Public Administration Architecture Framework)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Public Administration Architecture Framework (PAAF) is specifically
+designed to support enterprise architecture practices within public
+administrations. Developed by the Public Governance Institute of KU
+Leuven, PAAF focuses on governance, public value, and administrative
+processes, providing a context-sensitive approach that reflects the
+realities of government organisations.
+
+PAAF and EIRA have complementary objectives but operate at different
+levels of abstraction. EIRA provides a reference architecture focused on
+interoperability and solution design, while PAAF offers a
+governance-oriented framework that guides architectural decision-making
+within public institutions. As a result, their alignment creates an
+opportunity to combine strategic governance with technical and semantic
+interoperability.
+
+Document Conventions and Terminology
+------------------------------------
+
+Normative Text: MUST, MUST NOT, SHOULD, SHOULD NOT, MAY (RFC 2119).
+
+Non-Normative Text: Guidance and recommendations (not binding).
+
+Reference Architecture (RA): A standardised architectural framework.
+
+Architecture Building Block (ABB): Abstract, reusable element.
+
+Solution Building Block (SBB): Concrete implementation of ABBs.
+
+
+
