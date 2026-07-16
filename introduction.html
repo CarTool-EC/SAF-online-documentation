@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Context" href="context.html" />
+    <link rel="prev" title="Document Information" href="frontmatter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            eGovERA Solution Architecture Framework
+              <img src="_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#purpose-of-this-specification">Purpose of this Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scope">Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#target-audience">Target Audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#relationship-to-other-frameworks-and-standards">Relationship to Other Frameworks and Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#alignment-of-eira-with-eif">Alignment of EIRA with EIF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alignment-of-eira-with-togaf">Alignment of EIRA with TOGAF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alignment-of-eira-with-paaf-public-administration-architecture-framework">Alignment of EIRA with PAAF (Public Administration Architecture Framework)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#document-conventions-and-terminology">Document Conventions and Terminology</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lifecycle-management.html">Main life-cycle management approaches for Interoperable Solutions implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aim.html">eGovERA Architecture Implementation Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="saf-framework.html">eGovERA Solution Architecture Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">Usage Guidance and Methodology for an Intervention</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Model Creation Supporting Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">eGovERA Solution Architecture Framework</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>This document provides a structured specification for the design and
+implementation of interoperable digital public services within a
+European context. It establishes a consistent architectural and
+methodological foundation by leveraging the principles of European
+Interoperability Framework (EIF) to support the definition of a
+reference architecture for implementing interoperable European Digital
+Public Services named European Interoperability Reference Architecture
+(EIRA). The eGovernment European Reference Architecture (eGovERA)
+provides additional guidance to help Public Administrations design
+interoperable public services. The document aims to support the
+translation of interoperability principles into practical analysis and
+design artefacts that can be applied across public administrations. The
+specification is intended to guide stakeholders involved in policy,
+architecture, and solution delivery activities. It addresses both
+conceptual and practical aspects of interoperability, covering
+architectural analysis and design. By combining reference architectures
+with methodological guidance, the document supports the design of
+digital public services that are interoperable by design and aligned
+with European standards.</p>
+<p>The document adopts a structured approach aligned with the phases of
+Architecture Implementation Method (AIM) that reflects the lifecycle of
+interoperable solution architecture development. It begins with
+foundational context and frameworks, progresses through architecture and
+methodology, and concludes with supporting tools. This progression
+ensures that readers can move from understanding interoperability
+principles to applying them in real-world scenarios.</p>
+<p>The Interoperability Architecture Solutions portal offers courses to
+know more about EIRA and eGovERA. A list of the available courses can be
+seen on annex 8.5</p>
+<section id="purpose-of-this-specification">
+<h2>Purpose of this Specification<a class="headerlink" href="#purpose-of-this-specification" title="Link to this heading"></a></h2>
+<p>This document establishes a common methodology for applying EIRA and
+eGovERA in the analysis and design of digital public services. It
+defines how architectural concepts, including Architecture Building
+Blocks (ABBs) and Solution Building Blocks (SBBs), are used to structure
+requirements and guide solution design in a consistent and traceable
+manner. It provides a methodological basis for organising the
+development of interoperable solutions, including the use of lifecycle
+management approaches and the Architecture Implementation Method (AIM).
+This supports the systematic definition, analysis, and design of digital
+public services within a structured process. The document also defines
+how governance, validation, and compliance processes are applied to
+ensure that architectural outputs align with interoperability
+requirements and regulatory constraints. This includes the use of
+conformance and compliance mechanisms within the architecture lifecycle.</p>
+</section>
+<section id="scope">
+<h2>Scope<a class="headerlink" href="#scope" title="Link to this heading"></a></h2>
+<p>The scope of the document focuses on the definition, design, and
+modelling of digital public services, particularly in the context of
+interventions supported by EIRA and eGovERA. It is not the scope of EIRA
+and eGovERA the implementation of the solution but provides the
+architectural inputs to enable this activity.</p>
+</section>
+<section id="target-audience">
+<h2>Target Audience<a class="headerlink" href="#target-audience" title="Link to this heading"></a></h2>
+<p>This specification is designed for:</p>
+<ul class="simple">
+<li><p><strong>Policy Makers &amp; Digital Strategy Leaders:</strong> Responsible for
+defining and implementing policies that satisfy the needs of European
+Public Administrations, business and citizens.</p></li>
+<li><p><strong>Enterprise &amp; Solution Architects:</strong> Responsible for designing the
+architecture to be used in Interoperable Solutions across Europe.</p></li>
+<li><p><strong>Portfolio &amp; Programme Managers:</strong> Maintainers of the catalogue of
+assets and projects supporting the design and implementations of
+Interoperable Systems across Europe.</p></li>
+<li><p><strong>Solution Providers &amp; Project Teams:</strong> Responsible for implementing
+the Interoperable Systems designed by the Enterprise &amp; Solution
+Architects.</p></li>
+<li><p><strong>Academia &amp; Training Organisations:</strong> Users interested in learning
+and sharing knowledge about interoperability initiatives across
+Europe.</p></li>
+</ul>
+</section>
+<section id="relationship-to-other-frameworks-and-standards">
+<h2>Relationship to Other Frameworks and Standards<a class="headerlink" href="#relationship-to-other-frameworks-and-standards" title="Link to this heading"></a></h2>
+<section id="alignment-of-eira-with-eif">
+<h3>Alignment of EIRA with EIF<a class="headerlink" href="#alignment-of-eira-with-eif" title="Link to this heading"></a></h3>
+<p>The European Interoperability Reference Architecture (EIRA) is designed
+to align closely with the European Interoperability Framework (EIF) and
+its implementation strategy. This alignment ensures that EIRA does not
+operate as a standalone model but as a practical instrument to
+operationalise EIF principles across public sector systems. EIRA
+provides a structured way to translate high-level interoperability
+objectives into concrete architectural elements. This alignment is
+embodied in EIRA’s mapping to the four EIF interoperability levels:
+legal, organisational, semantic, and technical. By embedding these
+layers directly into its structure, EIRA enables public administrations
+to address interoperability in a comprehensive manner. Legal
+interoperability is supported through components that reflect regulatory
+constraints, while organisational interoperability is addressed through
+process and governance constructs. Semantic interoperability is
+facilitated by shared data models and vocabularies, and technical
+interoperability is ensured through standardised applications and
+interfaces, and infrastructure building blocks.</p>
+</section>
+<section id="alignment-of-eira-with-togaf">
+<h3>Alignment of EIRA with TOGAF<a class="headerlink" href="#alignment-of-eira-with-togaf" title="Link to this heading"></a></h3>
+<p>EIRA incorporates core concepts from TOGAF v9.1, including architecture
+patterns, building blocks, and architectural views and viewpoints. These
+elements strengthen EIRA’s methodological foundation and improve its
+usability for practitioners familiar with established enterprise
+architecture frameworks. The use of building blocks enables modular
+design and reuse, while architectural views support communication with
+different stakeholder groups. Architecture patterns further promote
+standardisation and accelerate solution design.</p>
+</section>
+<section id="alignment-of-eira-with-paaf-public-administration-architecture-framework">
+<h3>Alignment of EIRA with PAAF (Public Administration Architecture Framework)<a class="headerlink" href="#alignment-of-eira-with-paaf-public-administration-architecture-framework" title="Link to this heading"></a></h3>
+<p>The Public Administration Architecture Framework (PAAF) is specifically
+designed to support enterprise architecture practices within public
+administrations. Developed by the Public Governance Institute of KU
+Leuven, PAAF focuses on governance, public value, and administrative
+processes, providing a context-sensitive approach that reflects the
+realities of government organisations.</p>
+<p>PAAF and EIRA have complementary objectives but operate at different
+levels of abstraction. EIRA provides a reference architecture focused on
+interoperability and solution design, while PAAF offers a
+governance-oriented framework that guides architectural decision-making
+within public institutions. As a result, their alignment creates an
+opportunity to combine strategic governance with technical and semantic
+interoperability.</p>
+</section>
+</section>
+<section id="document-conventions-and-terminology">
+<h2>Document Conventions and Terminology<a class="headerlink" href="#document-conventions-and-terminology" title="Link to this heading"></a></h2>
+<p>Normative Text: MUST, MUST NOT, SHOULD, SHOULD NOT, MAY (RFC 2119).</p>
+<p>Non-Normative Text: Guidance and recommendations (not binding).</p>
+<p>Reference Architecture (RA): A standardised architectural framework.</p>
+<p>Architecture Building Block (ABB): Abstract, reusable element.</p>
+<p>Solution Building Block (SBB): Concrete implementation of ABBs.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="frontmatter.html" class="btn btn-neutral float-left" title="Document Information" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="context.html" class="btn btn-neutral float-right" title="Context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright © Copyright 2026, European Commission, DIGIT.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

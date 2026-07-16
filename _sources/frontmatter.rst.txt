@@ -1,0 +1,343 @@
+Document Information
+====================
+
+.. image:: _images/media/image1.png
+   :alt: Un dibujo de una persona El contenido generado por IA puede ser incorrecto.
+   :width: 8.49057in
+   :height: 11.2875in
+
+**Interoperability Architecture Solutions**
+
+**Solution Architecture Framework**
+
+*Directorate-General for Informatics*
+
+Reference
+
+eGovERA Solution Architecture Framework (SAF) v1.0.0
+
+Keywords
+
+<EIRA, eGovERA, ABBs, SBBs, ArchiMate, interoperability>
+
+.. image:: _images/media/image2.png
+   :width: 6.95417in
+
+CHANGE **CONTROL**
+
++------------------+---------------------------------------------------+
+| Modification     | Details                                           |
++==================+===================================================+
+| Version          |                                                   |
+| 1.\ **0.0**      |                                                   |
++------------------+---------------------------------------------------+
+| Current version  |                                                   |
++------------------+---------------------------------------------------+
+
+DISCLAIMER
+
+The information and views set out in this publication are those of the
+author(s) and do not necessarily reflect the official opinion of the
+Commission. The Commission does not guarantee the accuracy of the data
+included in this document. Neither the Commission nor any person acting
+on the Commission’s behalf may be held responsible for the use which may
+be made of the information contained therein.
+
+© European Union, 2026
+
+European **Commission**
+
+Directorate-General for Informatics
+
+Directorate B – Digital Public Services, Unit B2 – Interoperability Unit
+Contact: Catalin Moruju – Project Officer for the Interoperability
+Architecture Action
+
+E-mail: Catalin.MORUJU@ec.europa.eu
+
+European *Commission B-1049 Brussels*
+
+Intellectual Property Rights:
+
+The work is licensed under the European Union Public Licence (EUPL)
+v1.2. Reuse is authorised provided the source is acknowledged.
+
+The reuse policy of European Commission documents is regulated by
+Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39).
+
+Foreword
+
+This Specification has been produced by the Interoperability
+Architecture Solutions team, a Digital Europe (DEP) Programme initiative
+in alignment with the European Standardisation Regulation 1025/2012
+
+TABLE OF CONTENTS
+
+`1. Introduction <#introduction>`__ `8 <#introduction>`__
+
+`1.1. Purpose of this Specification <#purpose-of-this-specification>`__
+`8 <#purpose-of-this-specification>`__
+
+`1.2. Scope <#scope>`__ `8 <#scope>`__
+
+`1.3. Target Audience <#target-audience>`__ `8 <#target-audience>`__
+
+`1.4. Relationship to Other Frameworks and
+Standards <#relationship-to-other-frameworks-and-standards>`__
+`9 <#relationship-to-other-frameworks-and-standards>`__
+
+`1.4.1. Alignment of EIRA with EIF <#alignment-of-eira-with-eif>`__
+`9 <#alignment-of-eira-with-eif>`__
+
+`1.4.2. Alignment of EIRA with TOGAF <#alignment-of-eira-with-togaf>`__
+`9 <#alignment-of-eira-with-togaf>`__
+
+`1.4.3. Alignment of EIRA with PAAF (Public Administration Architecture
+Framework) <#alignment-of-eira-with-paaf-public-administration-architecture-framework>`__
+`9 <#alignment-of-eira-with-paaf-public-administration-architecture-framework>`__
+
+`1.5. Document Conventions and
+Terminology <#document-conventions-and-terminology>`__
+`9 <#document-conventions-and-terminology>`__
+
+`2. Context <#_Toc228457510>`__ `11 <#_Toc228457510>`__
+
+`2.1. Overview of the European Interoperability Framework
+(EIF) <#overview-of-the-european-interoperability-framework-eif>`__
+`11 <#overview-of-the-european-interoperability-framework-eif>`__
+
+`2.2. Overview of the European Interoperability Reference Architecture
+(EIRA) <#overview-of-the-european-interoperability-reference-architecture-eira>`__
+`11 <#overview-of-the-european-interoperability-reference-architecture-eira>`__
+
+`3. Main life-cycle management approaches for Interoperable Solutions
+implementation <#main-life-cycle-management-approaches-for-interoperable-solutions-implementation>`__
+`14 <#main-life-cycle-management-approaches-for-interoperable-solutions-implementation>`__
+
+`3.1. Implementation Based on
+Tranches <#implementation-based-on-tranches>`__
+`16 <#implementation-based-on-tranches>`__
+
+`3.1.1. Concept of Tranche <#concept-of-tranche>`__
+`16 <#concept-of-tranche>`__
+
+`3.1.2. Segmentation Criteria for
+Tranches <#segmentation-criteria-for-tranches>`__
+`17 <#segmentation-criteria-for-tranches>`__
+
+`3.1.3. Planning Tranches <#planning-tranches>`__
+`17 <#planning-tranches>`__
+
+`3.1.4. Role of Tranches in Life-Cycle
+Approaches <#role-of-tranches-in-life-cycle-approaches>`__
+`17 <#role-of-tranches-in-life-cycle-approaches>`__
+
+`3.2. Implementation Based on
+Increments <#implementation-based-on-increments>`__
+`17 <#implementation-based-on-increments>`__
+
+`3.2.1. Concept of Increment <#concept-of-increment>`__
+`17 <#concept-of-increment>`__
+
+`3.2.2. Incrementation Criteria <#incrementation-criteria>`__
+`17 <#incrementation-criteria>`__
+
+`3.2.3. Planning Increments <#planning-increments>`__
+`18 <#planning-increments>`__
+
+`3.2.4. Role of Increments in Life-Cycle
+Approaches <#role-of-increments-in-life-cycle-approaches>`__
+`18 <#role-of-increments-in-life-cycle-approaches>`__
+
+`3.3. Delivery Methodologies <#delivery-methodologies>`__
+`18 <#delivery-methodologies>`__
+
+`3.3.1. Linear Waterfall Approach <#linear-waterfall-approach>`__
+`18 <#linear-waterfall-approach>`__
+
+`3.3.2. Incremental Waterfall
+Approach <#incremental-waterfall-approach>`__
+`20 <#incremental-waterfall-approach>`__
+
+`3.3.3. Linear Agile Approach <#linear-agile-approach>`__
+`22 <#linear-agile-approach>`__
+
+`3.3.4. Incremental Agile Approach <#incremental-agile-approach>`__
+`23 <#incremental-agile-approach>`__
+
+`3.3.5. General Principles <#general-principles>`__
+`24 <#general-principles>`__
+
+`4. eGovERA Architecture Implementation
+Method <#egovera-architecture-implementation-method>`__
+`27 <#egovera-architecture-implementation-method>`__
+
+`4.1. Analysis of the target Interoperable
+Solution <#analysis-of-the-target-interoperable-solution>`__
+`27 <#analysis-of-the-target-interoperable-solution>`__
+
+`4.2. Design of the target Interoperable
+Solution <#design-of-the-target-interoperable-solution>`__
+`27 <#design-of-the-target-interoperable-solution>`__
+
+`5. eGovERA Solution Architecture
+Framework <#egovera-solution-architecture-framework>`__
+`30 <#egovera-solution-architecture-framework>`__
+
+`5.1. Architecture Views <#architecture-views>`__
+`30 <#architecture-views>`__
+
+`5.2. Design Principles <#design-principles>`__
+`33 <#design-principles>`__
+
+`5.3. Constraints <#constraints>`__ `34 <#constraints>`__
+
+`5.4. Reference Architectures and
+Enablers <#reference-architectures-and-enablers>`__
+`34 <#reference-architectures-and-enablers>`__
+
+`5.5. Building Blocks <#building-blocks>`__ `34 <#building-blocks>`__
+
+`5.5.1. Architecture Building Blocks
+(ABBs) <#architecture-building-blocks-abbs>`__
+`34 <#architecture-building-blocks-abbs>`__
+
+`5.5.2. Solution Building Blocks
+(SBBs) <#solution-building-blocks-sbbs>`__
+`35 <#solution-building-blocks-sbbs>`__
+
+`5.6. Governance and Review Process <#governance-and-review-process>`__
+`36 <#governance-and-review-process>`__
+
+`5.6.1. Conformance and Compliance <#conformance-and-compliance>`__
+`36 <#conformance-and-compliance>`__
+
+`5.6.2. Conformance Levels <#conformance-levels>`__
+`36 <#conformance-levels>`__
+
+`5.6.3. Maintenance and Evolution <#maintenance-and-evolution>`__
+`37 <#maintenance-and-evolution>`__
+
+`6. Usage Guidance and Methodology for an
+Intervention <#usage-guidance-and-methodology-for-an-intervention>`__
+`39 <#usage-guidance-and-methodology-for-an-intervention>`__
+
+`6.1. Show how to use the RA in an
+intervention. <#show-how-to-use-the-ra-in-an-intervention.>`__
+`39 <#show-how-to-use-the-ra-in-an-intervention.>`__
+
+`6.1.1. Lifecycle Phases of an
+Intervention <#lifecycle-phases-of-an-intervention>`__
+`40 <#lifecycle-phases-of-an-intervention>`__
+
+`6.2. Align RA with portfolio management and strategy
+planning. <#align-ra-with-portfolio-management-and-strategy-planning.>`__
+`42 <#align-ra-with-portfolio-management-and-strategy-planning.>`__
+
+`7. Model Creation Supporting
+Tools <#model-creation-supporting-tools>`__
+`44 <#model-creation-supporting-tools>`__
+
+`7.1. Model Creation Tools <#model-creation-tools>`__
+`44 <#model-creation-tools>`__
+
+`7.1.1. Archi Modelling Tool <#archi-modelling-tool>`__
+`44 <#archi-modelling-tool>`__
+
+`7.1.2. coArchi <#coarchi>`__ `44 <#coarchi>`__
+
+`7.1.3. Cartography Tool (Cartool) <#cartography-tool-cartool>`__
+`44 <#cartography-tool-cartool>`__
+
+`7.1.4. Test and Conformance Using Interoperability Test
+Bed <#test-and-conformance-using-interoperability-test-bed>`__
+`45 <#test-and-conformance-using-interoperability-test-bed>`__
+
+`8. Appendices <#appendices>`__ `49 <#appendices>`__
+
+`8.1. Glossary of Terms <#glossary-of-terms>`__
+`49 <#glossary-of-terms>`__
+
+`8.2. Abbreviations List <#abbreviations-list>`__
+`50 <#abbreviations-list>`__
+
+`8.3. Conventions Used for Lifecycle Management
+Figures <#conventions-used-for-lifecycle-management-figures>`__
+`51 <#conventions-used-for-lifecycle-management-figures>`__
+
+`8.4. Useful links <#useful-links>`__ `52 <#useful-links>`__
+
+`8.5. Joinup Courses <#joinup-courses>`__ `53 <#joinup-courses>`__
+
+TABLE OF FIGURES
+
+`Figure 1 Development Lifecycle Management <#_Toc228457561>`__
+`14 <#_Toc228457561>`__
+
+`Figure 2 Linear Waterfall – Approach <#_Toc228457562>`__
+`19 <#_Toc228457562>`__
+
+`Figure 3 Linear Waterfall – Segmentation by View <#_Toc228457563>`__
+`19 <#_Toc228457563>`__
+
+`Figure 4 Linear Waterfall – Segmentation by DBC <#_Toc228457564>`__
+`20 <#_Toc228457564>`__
+
+`Figure 5 Incremental Waterfall – Approach <#_Toc228457565>`__
+`20 <#_Toc228457565>`__
+
+`Figure 6 Incremental Waterfall – Segmentation by
+View <#_Toc228457566>`__ `21 <#_Toc228457566>`__
+
+`Figure 7 Incremental Waterfall – Segmentation by
+DBC <#_Toc228457567>`__ `21 <#_Toc228457567>`__
+
+`Figure 8 Linear Agile – Approach <#_Toc228457568>`__
+`22 <#_Toc228457568>`__
+
+`Figure 9 Linear Agile – Segmentation by View <#_Toc228457569>`__
+`22 <#_Toc228457569>`__
+
+`Figure 10 Linear Agile – Segmentation by DBC <#_Toc228457570>`__
+`23 <#_Toc228457570>`__
+
+`Figure 11 Incremental Agile – Approach <#_Toc228457571>`__
+`23 <#_Toc228457571>`__
+
+`Figure 12 Incremental Agile – Segmentation by View <#_Toc228457572>`__
+`24 <#_Toc228457572>`__
+
+`Figure 13 Incremental Agile – Segmentation by DBC <#_Toc228457573>`__
+`24 <#_Toc228457573>`__
+
+`Figure 14 Legal View <#_Toc228457574>`__ `30 <#_Toc228457574>`__
+
+`Figure 15 Organisational View <#_Toc228457575>`__
+`31 <#_Toc228457575>`__
+
+`Figure 16 Semantic View <#_Toc228457576>`__ `31 <#_Toc228457576>`__
+
+`Figure 17 Technical View - Application <#_Toc228457577>`__
+`32 <#_Toc228457577>`__
+
+`Figure 18 Technical View – Infrastructure <#_Toc228457578>`__
+`33 <#_Toc228457578>`__
+
+`Figure 19 Phases of an Intervention <#_Toc228457579>`__
+`40 <#_Toc228457579>`__
+
+LIST OF TABLES
+
+`Table 1 Glossary of Terms <#_Toc228433313>`__ `50 <#_Toc228433313>`__
+
+`Table 2 Abbreviations List <#_Toc228433314>`__ `50 <#_Toc228433314>`__
+
+`Table 3 Lifecycle Figures Convention <#_Toc228457582>`__
+`51 <#_Toc228457582>`__
+
+`Table 4 Useful Links <#_Toc228433315>`__ `52 <#_Toc228433315>`__
+
+`Table 5 Joinup Courses <#_Toc228433316>`__ `53 <#_Toc228433316>`__
+
+
+
