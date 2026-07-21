@@ -9,14 +9,42 @@ Interoperability Framework (EIF).
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents
+   :numbered:
+   :caption: Getting Started
 
-   frontmatter
    introduction
    context
-   lifecycle-management
    aim
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: SAF Framework
+
    saf-framework
    usage-guidance
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: Lifecycle & Management
+
+   lifecycle-management
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: Tools & Resources
+
    tools
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Additional Resources
+
    appendices
+
+.. toctree::
+   :hidden:
+
+   frontmatter

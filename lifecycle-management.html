@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main life-cycle management approaches for Interoperable Solutions implementation &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
+  <title>1. Main life-cycle management approaches for Interoperable Solutions implementation &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="eGovERA Architecture Implementation Method" href="aim.html" />
-    <link rel="prev" title="Context" href="context.html" /> 
+    <link rel="next" title="1. Model Creation Supporting Tools" href="tools.html" />
+    <link rel="prev" title="2. Usage Guidance and Methodology for an Intervention" href="usage-guidance.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,69 +44,83 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="context.html">2. Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aim.html">3. eGovERA Architecture Implementation Method</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SAF Framework</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="saf-framework.html">1. eGovERA Solution Architecture Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">2. Usage Guidance and Methodology for an Intervention</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lifecycle &amp; Management</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Main life-cycle management approaches for Interoperable Solutions implementation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-tranches">Implementation Based on Tranches</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#concept-of-tranche">Concept of Tranche</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#segmentation-criteria-for-tranches">Segmentation Criteria for Tranches</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#planning-tranches">Planning Tranches</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#role-of-tranches-in-life-cycle-approaches">Role of Tranches in Life-Cycle Approaches</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Main life-cycle management approaches for Interoperable Solutions implementation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-tranches">1.1. Implementation Based on Tranches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#concept-of-tranche">1.1.1. Concept of Tranche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#segmentation-criteria-for-tranches">1.1.2. Segmentation Criteria for Tranches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planning-tranches">1.1.3. Planning Tranches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#role-of-tranches-in-life-cycle-approaches">1.1.4. Role of Tranches in Life-Cycle Approaches</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-increments">Implementation Based on Increments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#concept-of-increment">Concept of Increment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#incrementation-criteria">Incrementation Criteria</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#planning-increments">Planning Increments</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#role-of-increments-in-life-cycle-approaches">Role of Increments in Life-Cycle Approaches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementation-based-on-increments">1.2. Implementation Based on Increments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#concept-of-increment">1.2.1. Concept of Increment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incrementation-criteria">1.2.2. Incrementation Criteria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#planning-increments">1.2.3. Planning Increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#role-of-increments-in-life-cycle-approaches">1.2.4. Role of Increments in Life-Cycle Approaches</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#delivery-methodologies">Delivery Methodologies</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#linear-waterfall-approach">Linear Waterfall Approach</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view">Segmentation by View</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities">Segmentation by Digital Business Capabilities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation">Combined Segmentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#applicability">Applicability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delivery-methodologies">1.3. Delivery Methodologies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linear-waterfall-approach">1.3.1. Linear Waterfall Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">1.3.1.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view">1.3.1.2. Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities">1.3.1.3. Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation">1.3.1.4. Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability">1.3.1.5. Applicability</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#incremental-waterfall-approach">Incremental Waterfall Approach</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview-1">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-1">Segmentation by View</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-1">Segmentation by Digital Business Capabilities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-1">Combined Segmentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#applicability-1">Applicability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incremental-waterfall-approach">1.3.2. Incremental Waterfall Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-1">1.3.2.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-1">1.3.2.2. Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-1">1.3.2.3. Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-1">1.3.2.4. Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-1">1.3.2.5. Applicability</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#linear-agile-approach">Linear Agile Approach</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview-2">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-2">Segmentation by View</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-2">Segmentation by Digital Business Capabilities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-2">Combined Segmentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#applicability-2">Applicability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linear-agile-approach">1.3.3. Linear Agile Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-2">1.3.3.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-2">1.3.3.2. Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-2">1.3.3.3. Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-2">1.3.3.4. Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-2">1.3.3.5. Applicability</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#incremental-agile-approach">Incremental Agile Approach</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview-3">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-3">Segmentation by View</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-3">Segmentation by Digital Business Capabilities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-3">Combined Segmentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#applicability-3">Applicability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#incremental-agile-approach">1.3.4. Incremental Agile Approach</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-3">1.3.4.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-view-3">1.3.4.2. Segmentation by View</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#segmentation-by-digital-business-capabilities-3">1.3.4.3. Segmentation by Digital Business Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combined-segmentation-3">1.3.4.4. Combined Segmentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#applicability-3">1.3.4.5. Applicability</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#general-principles">General Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general-principles">1.3.5. General Principles</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="aim.html">eGovERA Architecture Implementation Method</a></li>
-<li class="toctree-l1"><a class="reference internal" href="saf-framework.html">eGovERA Solution Architecture Framework</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">Usage Guidance and Methodology for an Intervention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Model Creation Supporting Tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools &amp; Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">1. Model Creation Supporting Tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
 </ul>
 
         </div>
@@ -123,7 +137,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Main life-cycle management approaches for Interoperable Solutions implementation</li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Main life-cycle management approaches for Interoperable Solutions implementation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/lifecycle-management.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -134,7 +148,7 @@
            <div itemprop="articleBody">
              
   <section id="main-life-cycle-management-approaches-for-interoperable-solutions-implementation">
-<h1>Main life-cycle management approaches for Interoperable Solutions implementation<a class="headerlink" href="#main-life-cycle-management-approaches-for-interoperable-solutions-implementation" title="Link to this heading"></a></h1>
+<h1><span class="section-number">1. </span>Main life-cycle management approaches for Interoperable Solutions implementation<a class="headerlink" href="#main-life-cycle-management-approaches-for-interoperable-solutions-implementation" title="Link to this heading"></a></h1>
 <p>A practical approach to implementing interoperable digital public
 services is the application of a “divide and conquer” strategy. This
 approach addresses the inherent complexity of large-scale information
@@ -289,9 +303,9 @@ executed. The following sections present the main delivery approaches
 supported by the eGovERA methodology and explains how they can be
 applied in practice.</p>
 <section id="implementation-based-on-tranches">
-<h2>Implementation Based on Tranches<a class="headerlink" href="#implementation-based-on-tranches" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.1. </span>Implementation Based on Tranches<a class="headerlink" href="#implementation-based-on-tranches" title="Link to this heading"></a></h2>
 <section id="concept-of-tranche">
-<h3>Concept of Tranche<a class="headerlink" href="#concept-of-tranche" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.1.1. </span>Concept of Tranche<a class="headerlink" href="#concept-of-tranche" title="Link to this heading"></a></h3>
 <p>A tranche (τ) represents a concrete partial implementation of a target
 interoperable solution, typically covering both analysis and design
 activities. Each tranche contributes to the overall target information
@@ -308,7 +322,7 @@ implementations where the solution can be decomposed into distinct,
 loosely coupled parts.</p>
 </section>
 <section id="segmentation-criteria-for-tranches">
-<h3>Segmentation Criteria for Tranches<a class="headerlink" href="#segmentation-criteria-for-tranches" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.1.2. </span>Segmentation Criteria for Tranches<a class="headerlink" href="#segmentation-criteria-for-tranches" title="Link to this heading"></a></h3>
 <p>Tranches are identified by selecting appropriate segmentation criteria,
 depending on the nature of the solution and the implementation strategy.</p>
 <p>Typical criteria include:</p>
@@ -320,7 +334,7 @@ depending on the nature of the solution and the implementation strategy.</p>
 manageable units.</p>
 </section>
 <section id="planning-tranches">
-<h3>Planning Tranches<a class="headerlink" href="#planning-tranches" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.1.3. </span>Planning Tranches<a class="headerlink" href="#planning-tranches" title="Link to this heading"></a></h3>
 <p>Planning tranches consists of selecting one segmentation criteria and
 applying it to define a set of tranches that ensures full coverage of
 the target information system.</p>
@@ -333,7 +347,7 @@ the target information system.</p>
 </ul>
 </section>
 <section id="role-of-tranches-in-life-cycle-approaches">
-<h3>Role of Tranches in Life-Cycle Approaches<a class="headerlink" href="#role-of-tranches-in-life-cycle-approaches" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.1.4. </span>Role of Tranches in Life-Cycle Approaches<a class="headerlink" href="#role-of-tranches-in-life-cycle-approaches" title="Link to this heading"></a></h3>
 <p>Tranches are used in life-cycle approaches where the development is
 organised as a sequence of distinct segments, such as:</p>
 <ul class="simple">
@@ -346,9 +360,9 @@ without iteration, depending on the approach).</p>
 </section>
 </section>
 <section id="implementation-based-on-increments">
-<h2>Implementation Based on Increments<a class="headerlink" href="#implementation-based-on-increments" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.2. </span>Implementation Based on Increments<a class="headerlink" href="#implementation-based-on-increments" title="Link to this heading"></a></h2>
 <section id="concept-of-increment">
-<h3>Concept of Increment<a class="headerlink" href="#concept-of-increment" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.2.1. </span>Concept of Increment<a class="headerlink" href="#concept-of-increment" title="Link to this heading"></a></h3>
 <p>An increment (Δ) represents a concrete partial implementation, covering
 both analysis and design activities, of a target interoperable solution
 that is additive to all prior increments.</p>
@@ -359,7 +373,7 @@ information system.</p>
 cumulative and interdependent.</p>
 </section>
 <section id="incrementation-criteria">
-<h3>Incrementation Criteria<a class="headerlink" href="#incrementation-criteria" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.2.2. </span>Incrementation Criteria<a class="headerlink" href="#incrementation-criteria" title="Link to this heading"></a></h3>
 <p>Increments are defined using criteria similar to those used for tranches
 but applied in an additive manner.</p>
 <p>Typical criteria include:</p>
@@ -371,7 +385,7 @@ but applied in an additive manner.</p>
 or depth.</p>
 </section>
 <section id="planning-increments">
-<h3>Planning Increments<a class="headerlink" href="#planning-increments" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.2.3. </span>Planning Increments<a class="headerlink" href="#planning-increments" title="Link to this heading"></a></h3>
 <p>Planning increments consists of selecting appropriate criteria and
 defining a sequence of increments that ensures full and progressive
 coverage of the target model.</p>
@@ -384,7 +398,7 @@ coverage of the target model.</p>
 <p>The result is a roadmap for progressive solution evolution.</p>
 </section>
 <section id="role-of-increments-in-life-cycle-approaches">
-<h3>Role of Increments in Life-Cycle Approaches<a class="headerlink" href="#role-of-increments-in-life-cycle-approaches" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.2.4. </span>Role of Increments in Life-Cycle Approaches<a class="headerlink" href="#role-of-increments-in-life-cycle-approaches" title="Link to this heading"></a></h3>
 <p>Increments are used in life-cycle approaches where the implementation
 evolves through additive steps, such as:</p>
 <ul class="simple">
@@ -401,7 +415,7 @@ of Form</p>
 </section>
 </section>
 <section id="delivery-methodologies">
-<h2>Delivery Methodologies<a class="headerlink" href="#delivery-methodologies" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.3. </span>Delivery Methodologies<a class="headerlink" href="#delivery-methodologies" title="Link to this heading"></a></h2>
 <p>This section defines the life-cycle management approaches applicable to
 the implementation of interoperable solutions within the eGovERA
 methodology. These approaches combine structuring logics (waterfall or
@@ -421,9 +435,9 @@ available for a given scope element.</p></li>
 <p>Please refer to section 8.3 for the conventions and symbols used for the
 figures depicted in the following chapters.</p>
 <section id="linear-waterfall-approach">
-<h3>Linear Waterfall Approach<a class="headerlink" href="#linear-waterfall-approach" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.3.1. </span>Linear Waterfall Approach<a class="headerlink" href="#linear-waterfall-approach" title="Link to this heading"></a></h3>
 <section id="overview">
-<h4>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.3.1.1. </span>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h4>
 <p>The Linear Waterfall approach structures the implementation of an
 interoperable solution as a sequence of tranches (τ), where each tranche
 represents a distinct and largely independent part of the solution.</p>
@@ -438,7 +452,7 @@ requirements prior to design.</p>
 collectively ensure full coverage of the target solution.</p>
 </section>
 <section id="segmentation-by-view">
-<h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.3.1.2. </span>Segmentation by View<a class="headerlink" href="#segmentation-by-view" title="Link to this heading"></a></h4>
 <p>Tranches are defined according to the EIRA LOST interoperability views
 (Legal, Organisational, Semantic, Technical – Application, Technical –
 Infrastructure).</p>
@@ -458,7 +472,7 @@ context.</p>
 <p>Figure 3 Linear Waterfall – Segmentation by View</p>
 </section>
 <section id="segmentation-by-digital-business-capabilities">
-<h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.3.1.3. </span>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities" title="Link to this heading"></a></h4>
 <p>Tranches are defined by Digital Business Capabilities (DBCs).</p>
 <p>Each tranche focuses on a specific DBC and covers all relevant
 interoperability views within that scope.</p>
@@ -472,7 +486,7 @@ interoperability views within that scope.</p>
 <p>Figure 4 Linear Waterfall – Segmentation by DBC</p>
 </section>
 <section id="combined-segmentation">
-<h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.3.1.4. </span>Combined Segmentation<a class="headerlink" href="#combined-segmentation" title="Link to this heading"></a></h4>
 <p>Segmentation may combine views and DBCs, enabling structured
 decomposition across both:</p>
 <ul class="simple">
@@ -481,7 +495,7 @@ decomposition across both:</p>
 </ul>
 </section>
 <section id="applicability">
-<h4>Applicability<a class="headerlink" href="#applicability" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.3.1.5. </span>Applicability<a class="headerlink" href="#applicability" title="Link to this heading"></a></h4>
 <p>This approach is suitable when:</p>
 <ul class="simple">
 <li><p>requirements are stable</p></li>
@@ -492,9 +506,9 @@ decomposition across both:</p>
 </section>
 </section>
 <section id="incremental-waterfall-approach">
-<h3>Incremental Waterfall Approach<a class="headerlink" href="#incremental-waterfall-approach" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.3.2. </span>Incremental Waterfall Approach<a class="headerlink" href="#incremental-waterfall-approach" title="Link to this heading"></a></h3>
 <section id="overview-1">
-<span id="id1"></span><h4>Overview<a class="headerlink" href="#overview-1" title="Link to this heading"></a></h4>
+<span id="id1"></span><h4><span class="section-number">1.3.2.1. </span>Overview<a class="headerlink" href="#overview-1" title="Link to this heading"></a></h4>
 <p>The Incremental Waterfall approach structures the implementation as a
 sequence of increments (Δ), where each increment is additive and builds
 upon previous ones.</p>
@@ -509,7 +523,7 @@ begin.</p>
 preserving strong control over completeness and consistency.</p>
 </section>
 <section id="segmentation-by-view-1">
-<span id="id2"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-1" title="Link to this heading"></a></h4>
+<span id="id2"></span><h4><span class="section-number">1.3.2.2. </span>Segmentation by View<a class="headerlink" href="#segmentation-by-view-1" title="Link to this heading"></a></h4>
 <p>Increments are defined by progressively extending the set of EIRA LOST
 views addressed.</p>
 <p>The process may start from any view and progressively incorporates
@@ -527,7 +541,7 @@ additional views.</p>
 <p>Figure 6 Incremental Waterfall – Segmentation by View</p>
 </section>
 <section id="segmentation-by-digital-business-capabilities-1">
-<span id="id3"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-1" title="Link to this heading"></a></h4>
+<span id="id3"></span><h4><span class="section-number">1.3.2.3. </span>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-1" title="Link to this heading"></a></h4>
 <p>Increments are defined by progressively expanding the set of Digital
 Business Capabilities.</p>
 <p>Example pattern:</p>
@@ -541,7 +555,7 @@ Business Capabilities.</p>
 <p>Each increment contributes to the overall solution scope.</p>
 </section>
 <section id="combined-segmentation-1">
-<span id="id4"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-1" title="Link to this heading"></a></h4>
+<span id="id4"></span><h4><span class="section-number">1.3.2.4. </span>Combined Segmentation<a class="headerlink" href="#combined-segmentation-1" title="Link to this heading"></a></h4>
 <p>Both segmentation strategies may be combined, allowing progressive:</p>
 <ul class="simple">
 <li><p>completion of interoperability views</p></li>
@@ -549,7 +563,7 @@ Business Capabilities.</p>
 </ul>
 </section>
 <section id="applicability-1">
-<span id="id5"></span><h4>Applicability<a class="headerlink" href="#applicability-1" title="Link to this heading"></a></h4>
+<span id="id5"></span><h4><span class="section-number">1.3.2.5. </span>Applicability<a class="headerlink" href="#applicability-1" title="Link to this heading"></a></h4>
 <p>This approach is suitable when:</p>
 <ul class="simple">
 <li><p>progressive architecture development is needed</p></li>
@@ -559,9 +573,9 @@ Business Capabilities.</p>
 </section>
 </section>
 <section id="linear-agile-approach">
-<h3>Linear Agile Approach<a class="headerlink" href="#linear-agile-approach" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.3.3. </span>Linear Agile Approach<a class="headerlink" href="#linear-agile-approach" title="Link to this heading"></a></h3>
 <section id="overview-2">
-<span id="id6"></span><h4>Overview<a class="headerlink" href="#overview-2" title="Link to this heading"></a></h4>
+<span id="id6"></span><h4><span class="section-number">1.3.3.1. </span>Overview<a class="headerlink" href="#overview-2" title="Link to this heading"></a></h4>
 <p>The Linear Agile approach structures the implementation as a sequence of
 tranches (τ), similar to the Linear Waterfall approach, but introduces
 iterative cycles within each tranche.</p>
@@ -575,7 +589,7 @@ activities, which may be iterated multiple times.</p>
 across all tranches, enabling faster feedback and adaptation.</p>
 </section>
 <section id="segmentation-by-view-2">
-<span id="id7"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-2" title="Link to this heading"></a></h4>
+<span id="id7"></span><h4><span class="section-number">1.3.3.2. </span>Segmentation by View<a class="headerlink" href="#segmentation-by-view-2" title="Link to this heading"></a></h4>
 <p>Tranches may also be defined by interoperability views.</p>
 <p>Each view is analysed and designed iteratively before proceeding to the
 next.</p>
@@ -584,7 +598,7 @@ next.</p>
 <p>Figure 9 Linear Agile – Segmentation by View</p>
 </section>
 <section id="segmentation-by-digital-business-capabilities-2">
-<span id="id8"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-2" title="Link to this heading"></a></h4>
+<span id="id8"></span><h4><span class="section-number">1.3.3.3. </span>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-2" title="Link to this heading"></a></h4>
 <p>Tranches are typically defined by Digital Business Capabilities.</p>
 <p>Each tranche is iteratively analysed and designed before moving to the
 next.</p>
@@ -598,7 +612,7 @@ next.</p>
 <p>Figure 10 Linear Agile – Segmentation by DBC</p>
 </section>
 <section id="combined-segmentation-2">
-<span id="id9"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-2" title="Link to this heading"></a></h4>
+<span id="id9"></span><h4><span class="section-number">1.3.3.4. </span>Combined Segmentation<a class="headerlink" href="#combined-segmentation-2" title="Link to this heading"></a></h4>
 <p>Segmentation may combine views and DBCs, enabling iterative refinement
 within:</p>
 <ul class="simple">
@@ -607,7 +621,7 @@ within:</p>
 </ul>
 </section>
 <section id="applicability-2">
-<span id="id10"></span><h4>Applicability<a class="headerlink" href="#applicability-2" title="Link to this heading"></a></h4>
+<span id="id10"></span><h4><span class="section-number">1.3.3.5. </span>Applicability<a class="headerlink" href="#applicability-2" title="Link to this heading"></a></h4>
 <p>This approach is suitable when:</p>
 <ul class="simple">
 <li><p>iterative refinement is required</p></li>
@@ -616,9 +630,9 @@ within:</p>
 </section>
 </section>
 <section id="incremental-agile-approach">
-<h3>Incremental Agile Approach<a class="headerlink" href="#incremental-agile-approach" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.3.4. </span>Incremental Agile Approach<a class="headerlink" href="#incremental-agile-approach" title="Link to this heading"></a></h3>
 <section id="overview-3">
-<span id="id11"></span><h4>Overview<a class="headerlink" href="#overview-3" title="Link to this heading"></a></h4>
+<span id="id11"></span><h4><span class="section-number">1.3.4.1. </span>Overview<a class="headerlink" href="#overview-3" title="Link to this heading"></a></h4>
 <p>The Incremental Agile approach combines incremental delivery (Δ) with
 iterative development cycles.</p>
 <p>In this approach, analysis and design are interleaved within each
@@ -631,7 +645,7 @@ followed by design, with possible iterations.</p>
 current increment, without waiting for full coverage of all increments.</p>
 </section>
 <section id="segmentation-by-view-3">
-<span id="id12"></span><h4>Segmentation by View<a class="headerlink" href="#segmentation-by-view-3" title="Link to this heading"></a></h4>
+<span id="id12"></span><h4><span class="section-number">1.3.4.2. </span>Segmentation by View<a class="headerlink" href="#segmentation-by-view-3" title="Link to this heading"></a></h4>
 <p>Increments may be defined by progressively incorporating
 interoperability views.</p>
 <p>Each increment adds new views and refines existing ones through
@@ -641,7 +655,7 @@ iterations.</p>
 <p>Figure 12 Incremental Agile – Segmentation by View</p>
 </section>
 <section id="segmentation-by-digital-business-capabilities-3">
-<span id="id13"></span><h4>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-3" title="Link to this heading"></a></h4>
+<span id="id13"></span><h4><span class="section-number">1.3.4.3. </span>Segmentation by Digital Business Capabilities<a class="headerlink" href="#segmentation-by-digital-business-capabilities-3" title="Link to this heading"></a></h4>
 <p>Increments are defined by progressively expanding the set of Digital
 Business Capabilities.</p>
 <p>Example pattern:</p>
@@ -655,7 +669,7 @@ Business Capabilities.</p>
 <p>Each increment is iteratively analysed and designed.</p>
 </section>
 <section id="combined-segmentation-3">
-<span id="id14"></span><h4>Combined Segmentation<a class="headerlink" href="#combined-segmentation-3" title="Link to this heading"></a></h4>
+<span id="id14"></span><h4><span class="section-number">1.3.4.4. </span>Combined Segmentation<a class="headerlink" href="#combined-segmentation-3" title="Link to this heading"></a></h4>
 <p>This approach allows combining:</p>
 <ul class="simple">
 <li><p>addition of interoperability views</p></li>
@@ -664,7 +678,7 @@ Business Capabilities.</p>
 </ul>
 </section>
 <section id="applicability-3">
-<span id="id15"></span><h4>Applicability<a class="headerlink" href="#applicability-3" title="Link to this heading"></a></h4>
+<span id="id15"></span><h4><span class="section-number">1.3.4.5. </span>Applicability<a class="headerlink" href="#applicability-3" title="Link to this heading"></a></h4>
 <p>This approach is suitable when:</p>
 <ul class="simple">
 <li><p>requirements evolve</p></li>
@@ -674,7 +688,7 @@ Business Capabilities.</p>
 </section>
 </section>
 <section id="general-principles">
-<h3>General Principles<a class="headerlink" href="#general-principles" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.3.5. </span>General Principles<a class="headerlink" href="#general-principles" title="Link to this heading"></a></h3>
 <p>Across all approaches:</p>
 <ul class="simple">
 <li><p>Tranches (τ) represent disjoint segments of the solution</p></li>
@@ -701,8 +715,8 @@ and support structured development of interoperable solutions.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="context.html" class="btn btn-neutral float-left" title="Context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="aim.html" class="btn btn-neutral float-right" title="eGovERA Architecture Implementation Method" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage-guidance.html" class="btn btn-neutral float-left" title="2. Usage Guidance and Methodology for an Intervention" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tools.html" class="btn btn-neutral float-right" title="1. Model Creation Supporting Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

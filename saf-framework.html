@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>eGovERA Solution Architecture Framework &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
+  <title>1. eGovERA Solution Architecture Framework &mdash; eGovERA Solution Architecture Framework 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b55727a9" />
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Usage Guidance and Methodology for an Intervention" href="usage-guidance.html" />
-    <link rel="prev" title="eGovERA Architecture Implementation Method" href="aim.html" /> 
+    <link rel="next" title="2. Usage Guidance and Methodology for an Intervention" href="usage-guidance.html" />
+    <link rel="prev" title="3. eGovERA Architecture Implementation Method" href="aim.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,40 +44,54 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="context.html">2. Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aim.html">3. eGovERA Architecture Implementation Method</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SAF Framework</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="context.html">Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lifecycle-management.html">Main life-cycle management approaches for Interoperable Solutions implementation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aim.html">eGovERA Architecture Implementation Method</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">eGovERA Solution Architecture Framework</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#architecture-views">Architecture Views</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#design-principles">Design Principles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#constraints">Constraints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reference-architectures-and-enablers">Reference Architectures and Enablers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#building-blocks">Building Blocks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#architecture-building-blocks-abbs">Architecture Building Blocks (ABBs)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#abbs-in-eira-and-egovera">ABBs in EIRA and eGovERA</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. eGovERA Solution Architecture Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#architecture-views">1.1. Architecture Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#design-principles">1.2. Design Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#constraints">1.3. Constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reference-architectures-and-enablers">1.4. Reference Architectures and Enablers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-blocks">1.5. Building Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#architecture-building-blocks-abbs">1.5.1. Architecture Building Blocks (ABBs)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#abbs-in-eira-and-egovera">1.5.1.1. ABBs in EIRA and eGovERA</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#solution-building-blocks-sbbs">Solution Building Blocks (SBBs)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sbbs-in-eira-and-egovera">SBBs in EIRA and eGovERA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solution-building-blocks-sbbs">1.5.2. Solution Building Blocks (SBBs)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sbbs-in-eira-and-egovera">1.5.2.1. SBBs in EIRA and eGovERA</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#governance-and-review-process">Governance and Review Process</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#conformance-and-compliance">Conformance and Compliance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#conformance-levels">Conformance Levels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#maintenance-and-evolution">Maintenance and Evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#governance-and-review-process">1.6. Governance and Review Process</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conformance-and-compliance">1.6.1. Conformance and Compliance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conformance-levels">1.6.2. Conformance Levels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#maintenance-and-evolution">1.6.3. Maintenance and Evolution</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">Usage Guidance and Methodology for an Intervention</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Model Creation Supporting Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage-guidance.html">2. Usage Guidance and Methodology for an Intervention</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lifecycle &amp; Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lifecycle-management.html">1. Main life-cycle management approaches for Interoperable Solutions implementation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools &amp; Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">1. Model Creation Supporting Tools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="appendices.html">Appendices</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="frontmatter.html">Document Information</a></li>
 </ul>
 
         </div>
@@ -94,7 +108,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">eGovERA Solution Architecture Framework</li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>eGovERA Solution Architecture Framework</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/saf-framework.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -105,9 +119,9 @@
            <div itemprop="articleBody">
              
   <section id="egovera-solution-architecture-framework">
-<h1>eGovERA Solution Architecture Framework<a class="headerlink" href="#egovera-solution-architecture-framework" title="Link to this heading"></a></h1>
+<h1><span class="section-number">1. </span>eGovERA Solution Architecture Framework<a class="headerlink" href="#egovera-solution-architecture-framework" title="Link to this heading"></a></h1>
 <section id="architecture-views">
-<h2>Architecture Views<a class="headerlink" href="#architecture-views" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.1. </span>Architecture Views<a class="headerlink" href="#architecture-views" title="Link to this heading"></a></h2>
 <p>The European Interoperability Reference Architecture establishes a
 structured approach to interoperability by separating concerns into four
 complementary views. This structure ensures that risks related to
@@ -173,7 +187,7 @@ entire architecture. Please refer to European Interoperability Reference
 Architecture Specification for further information.</p>
 </section>
 <section id="design-principles">
-<h2>Design Principles<a class="headerlink" href="#design-principles" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.2. </span>Design Principles<a class="headerlink" href="#design-principles" title="Link to this heading"></a></h2>
 <p>The overarching objective of the design principles is to ensure that
 digital public services deliver consistent value across European
 administrations while remaining adaptable to future policy and
@@ -213,7 +227,7 @@ business continuity, ensuring that digital public services remain
 resilient.</p>
 </section>
 <section id="constraints">
-<h2>Constraints<a class="headerlink" href="#constraints" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.3. </span>Constraints<a class="headerlink" href="#constraints" title="Link to this heading"></a></h2>
 <p>The constraints define the boundaries within which architectural
 decisions must be made, ensuring consistency, compliance, and alignment
 with European public sector objectives. Foremost among these is the
@@ -249,7 +263,7 @@ interoperability and reduces systemic risk, it demands greater
 coordination and can extend development timelines.</p>
 </section>
 <section id="reference-architectures-and-enablers">
-<h2>Reference Architectures and Enablers<a class="headerlink" href="#reference-architectures-and-enablers" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.4. </span>Reference Architectures and Enablers<a class="headerlink" href="#reference-architectures-and-enablers" title="Link to this heading"></a></h2>
 <p>Interoperability patterns play a central role in this approach. Patterns
 capture recurring solutions to common challenges without prescribing
 specific technologies. Instead, they define stable combinations of
@@ -266,13 +280,13 @@ sharing through common governance, semantic and technical alignment.</p>
 Application in the EIRA / eGovERA reference architecture.</p>
 </section>
 <section id="building-blocks">
-<h2>Building Blocks<a class="headerlink" href="#building-blocks" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.5. </span>Building Blocks<a class="headerlink" href="#building-blocks" title="Link to this heading"></a></h2>
 <p>In this section is provided an overview of the Architecture and Solution
 building blocks present in EIRA and eGovERA. A comprehensive list can be
 found on the “Reference Architecture documentation and publication”
 published separately.</p>
 <section id="architecture-building-blocks-abbs">
-<h3>Architecture Building Blocks (ABBs)<a class="headerlink" href="#architecture-building-blocks-abbs" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.5.1. </span>Architecture Building Blocks (ABBs)<a class="headerlink" href="#architecture-building-blocks-abbs" title="Link to this heading"></a></h3>
 <p>Architecture Building Blocks (ABBs) define the essential requirements to
 design consistent and interoperable digital public services, enabling
 organisations to align solutions with strategic and regulatory
@@ -300,7 +314,7 @@ comparability across projects, while mitigating the risk of
 fragmentation or duplication of effort in large-scale public sector
 environments.</p>
 <section id="abbs-in-eira-and-egovera">
-<h4>ABBs in EIRA and eGovERA<a class="headerlink" href="#abbs-in-eira-and-egovera" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.5.1.1. </span>ABBs in EIRA and eGovERA<a class="headerlink" href="#abbs-in-eira-and-egovera" title="Link to this heading"></a></h4>
 <p>Within EIRA and eGovERA, Architecture Building Blocks (ABBs) serve as
 the core elements of the architecture model used to represent
 requirements. These ABBs are identified across all LOST views (Legal,
@@ -340,7 +354,7 @@ publication.</p>
 </section>
 </section>
 <section id="solution-building-blocks-sbbs">
-<h3>Solution Building Blocks (SBBs)<a class="headerlink" href="#solution-building-blocks-sbbs" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.5.2. </span>Solution Building Blocks (SBBs)<a class="headerlink" href="#solution-building-blocks-sbbs" title="Link to this heading"></a></h3>
 <p>Solution Building Blocks translate architectural intent into operational
 reality, enabling organisations to deliver tangible digital services
 that meet defined requirements (as ABBs). Their primary value lies in
@@ -364,7 +378,7 @@ services. However, their effectiveness depends on maintaining alignment
 with the underlying architectural definitions, as deviations can
 introduce interoperability risks or reduce system coherence.</p>
 <section id="sbbs-in-eira-and-egovera">
-<h4>SBBs in EIRA and eGovERA<a class="headerlink" href="#sbbs-in-eira-and-egovera" title="Link to this heading"></a></h4>
+<h4><span class="section-number">1.5.2.1. </span>SBBs in EIRA and eGovERA<a class="headerlink" href="#sbbs-in-eira-and-egovera" title="Link to this heading"></a></h4>
 <p>Within EIRA and eGovERA, Solution Building Blocks (SBBs) represent the
 core elements of the architecture model used to define the solution.
 SBBs correspond to the concrete realisation of requirements and are
@@ -408,9 +422,9 @@ publication.</p>
 </section>
 </section>
 <section id="governance-and-review-process">
-<h2>Governance and Review Process<a class="headerlink" href="#governance-and-review-process" title="Link to this heading"></a></h2>
+<h2><span class="section-number">1.6. </span>Governance and Review Process<a class="headerlink" href="#governance-and-review-process" title="Link to this heading"></a></h2>
 <section id="conformance-and-compliance">
-<h3>Conformance and Compliance<a class="headerlink" href="#conformance-and-compliance" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.6.1. </span>Conformance and Compliance<a class="headerlink" href="#conformance-and-compliance" title="Link to this heading"></a></h3>
 <p>Governance within EIRA and eGovERA is structured around validation,
 conformance, and compliance. Validation assesses whether the
 architecture meets functional, non-functional, and interoperability
@@ -427,7 +441,7 @@ policy obligations. Failure to meet compliance requirements presents
 significant legal and operational risks.</p>
 </section>
 <section id="conformance-levels">
-<h3>Conformance Levels<a class="headerlink" href="#conformance-levels" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.6.2. </span>Conformance Levels<a class="headerlink" href="#conformance-levels" title="Link to this heading"></a></h3>
 <p>Conformance is structured across three levels: mandatory, recommended,
 and optional. Mandatory elements establish baseline requirements,
 including the use of LOST views, ArchiMate modelling, and ELAP
@@ -440,7 +454,7 @@ enhancements without compromising core principles. This tiered approach
 allows proportional application across different contexts.</p>
 </section>
 <section id="maintenance-and-evolution">
-<h3>Maintenance and Evolution<a class="headerlink" href="#maintenance-and-evolution" title="Link to this heading"></a></h3>
+<h3><span class="section-number">1.6.3. </span>Maintenance and Evolution<a class="headerlink" href="#maintenance-and-evolution" title="Link to this heading"></a></h3>
 <p>The reference architecture follows a structured lifecycle to remain
 relevant and responsive to user needs. Changes are categorised as major,
 minor, or patch releases, depending on their impact. Major changes
@@ -460,8 +474,8 @@ practicality.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="aim.html" class="btn btn-neutral float-left" title="eGovERA Architecture Implementation Method" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="usage-guidance.html" class="btn btn-neutral float-right" title="Usage Guidance and Methodology for an Intervention" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="aim.html" class="btn btn-neutral float-left" title="3. eGovERA Architecture Implementation Method" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage-guidance.html" class="btn btn-neutral float-right" title="2. Usage Guidance and Methodology for an Intervention" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
