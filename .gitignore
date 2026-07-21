@@ -1,7 +1,25 @@
-docs/_build/
+# Python
 __pycache__/
-*.pyc
-.DS_Store
-Thumbs.db
+*.py[cod]
+*.pyo
+*.pyd
 
-docs/build/
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Sphinx build
+docs/_build/
+_build/
+.doctrees/
+
+# OS files
+.DS_Store
+Thumbs.dbdocs/build/
+
+_preview_build/
