@@ -43,8 +43,3 @@ Interoperability Framework (EIF).
    :caption: Additional Resources
 
    appendices
-
-.. toctree::
-   :hidden:
-
-   frontmatter

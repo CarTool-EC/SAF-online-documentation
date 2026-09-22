@@ -29,7 +29,8 @@ clearly identified.
    :width: 6.65972in
    :height: 4.79306in
    :align: center
-   Figure 14 Legal View
+   
+Figure 14 Legal View
 
 The **Organisational view** addresses how services are delivered in
 practice, defining the processes, roles, and collaboration mechanisms
@@ -43,7 +44,8 @@ effectively, reducing inefficiencies and duplication of effort.
    :width: 6.67917in
    :height: 2.34375in
    :align: center
-   Figure 15 Organisational View
+   
+Figure 15 Organisational View
 
 The **Semantic view** ensures that information exchanged between systems
 is consistently understood. The business implication is data
@@ -57,7 +59,8 @@ boundaries.
    :width: 6.67361in
    :height: 2.87986in
    :align: center
-   Figure 16 Semantic View
+   
+Figure 16 Semantic View
 
 The **Technical view** enables the actual exchange of data and
 communication between systems. It encompasses both application-level
@@ -72,13 +75,15 @@ frameworks.
    :width: 6.66389in
    :height: 4.69444in
    :align: center
-   Figure 17 Technical View - Application
+   
+Figure 17 Technical View - Application
 
 .. image:: _images/media/image21.png
    :width: 6.25954in
    :height: 5.25078in
    :align: center
-   Figure 18 Technical View – Infrastructure
+
+Figure 18 Technical View – Infrastructure
 
 To support consistency across all views, the architecture aligns with
 ArchiMate®, an internationally recognised modelling standard. This

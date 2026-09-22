@@ -13,7 +13,7 @@ be split into the following steps:
    :width: 5.59389in
    :height: 3.0087in
    :align: center
-   Figure 1 Development Lifecycle Management
+Figure 1 Development Lifecycle Management
 
 *Start:*
 
@@ -373,7 +373,7 @@ requirements prior to design.
    :width: 3.74028in
    :height: 2.95347in
    :align: center
-   Figure 2 Linear Waterfall – Approach
+Figure 2 Linear Waterfall – Approach
 
 Tranches are defined based on selected segmentation criteria and
 collectively ensure full coverage of the target solution.
@@ -405,7 +405,7 @@ Example pattern:
    :width: 5.24028in
    :height: 0.29545in
    :align: center
-   Figure 3 Linear Waterfall – Segmentation by View
+Figure 3 Linear Waterfall – Segmentation by View
 
 Segmentation by Digital Business Capabilities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -425,7 +425,7 @@ Example pattern:
    :width: 5.61389in
    :height: 0.84848in
    :align: center
-   Figure 4 Linear Waterfall – Segmentation by DBC
+Figure 4 Linear Waterfall – Segmentation by DBC
 
 Combined Segmentation
 ^^^^^^^^^^^^^^^^^^^^^
@@ -471,7 +471,7 @@ begin.
    :width: 3.14722in
    :height: 2.95347in
    :align: center
-   Figure 5 Incremental Waterfall – Approach
+Figure 5 Incremental Waterfall – Approach
 
 This approach enables progressive structuring of the solution while
 preserving strong control over completeness and consistency.
@@ -503,7 +503,7 @@ Example pattern:
    :width: 6.78424in
    :height: 0.23485in
    :align: center
-   Figure 6 Incremental Waterfall – Segmentation by View
+Figure 6 Incremental Waterfall – Segmentation by View
 
 .. _segmentation-by-digital-business-capabilities-1:
 
@@ -523,7 +523,7 @@ Example pattern:
    :width: 7.91145in
    :height: 0.77358in
    :align: center
-   Figure 7 Incremental Waterfall – Segmentation by DBC
+Figure 7 Incremental Waterfall – Segmentation by DBC
 
 Each increment contributes to the overall solution scope.
 
@@ -571,7 +571,7 @@ activities, which may be iterated multiple times.
    :width: 6.84028in
    :height: 1.64653in
    :align: center
-   Figure 8 Linear Agile – Approach
+Figure 8 Linear Agile – Approach
 
 Design activities can start without waiting for analysis to be completed
 across all tranches, enabling faster feedback and adaptation.
@@ -590,7 +590,7 @@ next.
    :width: 6.22083in
    :height: 0.72014in
    :align: center
-   Figure 9 Linear Agile – Segmentation by View
+Figure 9 Linear Agile – Segmentation by View
 
 .. _segmentation-by-digital-business-capabilities-2:
 
@@ -612,7 +612,7 @@ Example pattern:
    :width: 6.54388in
    :height: 1.17445in
    :align: center
-   Figure 10 Linear Agile – Segmentation by DBC
+Figure 10 Linear Agile – Segmentation by DBC
 
 .. _combined-segmentation-2:
 
@@ -656,7 +656,7 @@ followed by design, with possible iterations.
    :width: 6.32708in
    :height: 1.87361in
    :align: center
-   Figure 11 Incremental Agile – Approach
+Figure 11 Incremental Agile – Approach
 
 Design can start as soon as sufficient analysis is available for the
 current increment, without waiting for full coverage of all increments.
@@ -676,7 +676,7 @@ iterations.
    :width: 6.84722in
    :height: 0.71319in
    :align: center
-   Figure 12 Incremental Agile – Segmentation by View
+Figure 12 Incremental Agile – Segmentation by View
 
 .. _segmentation-by-digital-business-capabilities-3:
 
@@ -696,7 +696,7 @@ Example pattern:
    :width: 6.708in
    :height: 1.15226in
    :align: center
-   Figure 13 Incremental Agile – Segmentation by DBC
+Figure 13 Incremental Agile – Segmentation by DBC
 
 Each increment is iteratively analysed and designed.
 
