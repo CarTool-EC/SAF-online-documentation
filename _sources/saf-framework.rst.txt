@@ -28,7 +28,8 @@ clearly identified.
 .. image:: _images/media/image17.png
    :width: 6.65972in
    :height: 4.79306in
-
+   :align: center
+   
 Figure 14 Legal View
 
 The **Organisational view** addresses how services are delivered in
@@ -42,7 +43,8 @@ effectively, reducing inefficiencies and duplication of effort.
 .. image:: _images/media/image18.png
    :width: 6.67917in
    :height: 2.34375in
-
+   :align: center
+   
 Figure 15 Organisational View
 
 The **Semantic view** ensures that information exchanged between systems
@@ -56,7 +58,8 @@ boundaries.
 .. image:: _images/media/image19.png
    :width: 6.67361in
    :height: 2.87986in
-
+   :align: center
+   
 Figure 16 Semantic View
 
 The **Technical view** enables the actual exchange of data and
@@ -71,12 +74,14 @@ frameworks.
 .. image:: _images/media/image20.png
    :width: 6.66389in
    :height: 4.69444in
-
+   :align: center
+   
 Figure 17 Technical View - Application
 
 .. image:: _images/media/image21.png
    :width: 6.25954in
    :height: 5.25078in
+   :align: center
 
 Figure 18 Technical View – Infrastructure
 
