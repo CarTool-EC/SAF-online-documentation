@@ -56,7 +56,7 @@ synchronisation, which is particularly relevant in distributed or
 multi-organisational contexts. Please check chapter 8 for the link to
 the official website.
 
-Cartography Tool (Cartool)
+Cartography Tool (CarTool)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Cartography Tool (CarTool) is a specialised open-source plugin for
@@ -83,57 +83,74 @@ with which architects can model solutions in conformance with EIRA as a
 standard reference architecture and implement National or
 domain-specific Cartographies following the EIRA and eGovERA structure.
 
-*Architectural Challenges solved by Cartool:*
+*Architectural Challenges solved by CarTool:*
 
-CarTool directly addresses the following architectural challenges: (1)
-Lack of modelling standardisation as without a structured tool,
-modelling of ABBs and SBBs tends to diverge in notation, attribute
-completeness, and structural conventions. CarTool enforces EIRA-defined
-metadata schemas and artefact conventions, ensuring consistent
-architectural expression. (2) Inconsistency across LOST views - EIRA
-organises building blocks across Legal, Organisational, Semantic, and
-technical views and CarTool enables architects to navigate and populate
-these views in a structured manner, ensuring building blocks are
-positioned in the correct interoperability layer and that cross-view
-dependencies are made explicit. (3) Difficulty in aligning with EIRA as
-it simplifies the EIRA complexity by providing in-tool access to EIRA
-views, building block documentation, the European Library of
-Interoperability Specifications (ELIS), and the European Library of
-Architecture Principles (ELAP). (4) Challenges in reuse and governance
-as it enables reuse by suggesting existing SBBs when modelling new
-solutions, reducing duplication and improving architectural governance.
+CarTool directly addresses the following architectural challenges:
+
+- **Lack of modelling standardisation** – Without a structured tool,
+  modelling of ABBs and SBBs tends to diverge in notation, attribute
+  completeness, and structural conventions. CarTool enforces EIRA-defined
+  metadata schemas and artefact conventions, ensuring consistent
+  architectural expression.
+
+- **Inconsistency across LOST views** – EIRA organises building blocks
+  across Legal, Organisational, Semantic, and Technical views. CarTool
+  enables architects to navigate and populate these views in a structured
+  manner, ensuring building blocks are positioned in the correct
+  interoperability layer and that cross-view dependencies are made
+  explicit.
+
+- **Difficulty in aligning with EIRA** – CarTool simplifies the
+  complexity of EIRA by providing in-tool access to EIRA views, building
+  block documentation, the European Library of Interoperability
+  Specifications (ELIS), and the European Library of Architecture
+  Principles (ELAP).
+
+- **Challenges in reuse and governance** – CarTool enables reuse by
+  suggesting existing SBBs when modelling new solutions, reducing
+  duplication and improving architectural governance.
 
 *Capabilities:*
 
-CarTool provides the following high-level architectural capabilities.
-(1) EIRA Viewpoint and Structural Support as it renders the full EIRA
-view structure across Legal, Organisational, Semantic,
-Technical-Application, and Technical-Infrastructure views, supporting
-both analysis and design activities. (2) ABB and SBB Management as it
-enables structured management of ABBs and their instantiation as SBBs,
-automatically pre-populating required EIRA metadata attributes and
-providing auto-completion suggestions from the European Interoperability
-Cartography. (3) Interoperability Specification and Architecture
-Principles access as it integrates ELIS and ELAP, allowing standards and
-architecture principles to be browsed and applied directly within
-solution and SAT models.
+CarTool provides the following high-level architectural capabilities:
+
+- **EIRA viewpoint and structural support** – Renders the full EIRA view
+  structure across the Legal, Organisational, Semantic,
+  Technical-Application, and Technical-Infrastructure views, supporting
+  both analysis and design activities.
+
+- **ABB and SBB management** – Enables structured management of ABBs and
+  their instantiation as SBBs, automatically pre-populating required EIRA
+  metadata attributes and providing auto-completion suggestions from the
+  European Interoperability Cartography.
+
+- **Access to interoperability specifications and architecture
+  principles** – Integrates ELIS and ELAP, allowing standards and
+  architecture principles to be browsed and applied directly within
+  solution and SAT models.
 
 *Intervention Support:*
 
 Within the eGovERA Model, CarTool provides specific support across the
-architecture phases of an intervention (1) Modelling interventions
-aligned with EIRA and eGovERA as it supports creation of solution models
-and SATs grounded in eGovERA Reference Architecture. (2) Mapping ABBs to
-SBBs as it enforces EIRA metadata population and records ABB-to-SBB
-traceability, ensuring every solution component is traceable to an
-identified capability requirement. (3) Evolution and impact analysis the
-automatic update mechanism and Cartography synchronisation capabilities
-support management of EIRA version changes such as the tabular query
-facility enables architects to identify all solutions and SBBs affected
-by a change to a given ABB or interoperability layer. (4) Consistency
-across multiple interventions as it enforces a consistent modelling
-baseline through EIRA-version control, reducing fragmentation across
-parallel intervention models.
+architecture phases of an intervention:
+
+- **Modelling interventions aligned with EIRA and eGovERA** – Supports
+  the creation of solution models and SATs grounded in the eGovERA
+  Reference Architecture.
+
+- **Mapping ABBs to SBBs** – Enforces EIRA metadata population and
+  records ABB-to-SBB traceability, ensuring every solution component is
+  traceable to an identified capability requirement.
+
+- **Evolution and impact analysis** – The automatic update mechanism and
+  Cartography synchronisation capabilities support the management of EIRA
+  version changes. For example, the tabular query facility enables
+  architects to identify all solutions and SBBs affected by a change to a
+  given ABB or interoperability layer.
+
+- **Consistency across multiple interventions** – Enforces a consistent
+  modelling baseline through EIRA version control, reducing fragmentation
+  across parallel intervention models.
 
 Taken together, these tools form an integrated ecosystem that supports
 modelling, collaboration, and reuse within the EIRA and eGovERA context.
@@ -208,10 +225,10 @@ traceability between requirements and solutions is preserved. This
 reduces the risk of inconsistencies propagating into later stages of the
 lifecycle.
 
-*EIRA Validator and Model Conformance*
+*Interoperability Architecture Solutions Validator and Model Conformance*
 
-A central mechanism for validation is the EIRA Validator, provided
-within the Interoperability Test Bed. The EIRA Validator enables the
+A central mechanism for validation is the Interoperability Architecture Solutions Validator, provided
+within the Interoperability Test Bed. The Interoperability Architecture Solutions Validator enables the
 verification of EIRA and eGovERA models against predefined validation
 profiles, ensuring that they conform to expected modelling conventions
 and architectural rules.

@@ -105,7 +105,7 @@ outputs are not only theoretically sound but also practically
 applicable, thereby increasing the likelihood of successful
 implementation.
 
-Figure 19 Phases of an Intervention
+.. Here it is missing a diagram explaining the process
 
 Lifecycle Phases of an Intervention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -25,7 +25,7 @@ the architecture ensures that interoperability initiatives are viable
 within existing legal frameworks and that enabling instruments are
 clearly identified.
 
-.. image:: _images/media/image17.png
+.. image:: _images/media/fig14-legal-view.png
    :width: 6.65972in
    :height: 4.79306in
    :align: center
@@ -40,7 +40,7 @@ technically sound systems may fail to deliver consistent outcomes. This
 view ensures that participating organisations can work together
 effectively, reducing inefficiencies and duplication of effort.
 
-.. image:: _images/media/image18.png
+.. image:: _images/media/fig15-organisational-view.png
    :width: 6.67917in
    :height: 2.34375in
    :align: center
@@ -55,7 +55,7 @@ in decision-making and service execution. This view mitigates such risks
 by establishing a common meaning for data across organisational
 boundaries.
 
-.. image:: _images/media/image19.png
+.. image:: _images/media/fig16-semantic-view.png
    :width: 6.67361in
    :height: 2.87986in
    :align: center
@@ -71,14 +71,14 @@ differences in technology platforms, deployment models such as
 on-premises or cloud environments, network configurations, and security
 frameworks.
 
-.. image:: _images/media/image20.png
+.. image:: _images/media/fig17-technical-view-application.png
    :width: 6.66389in
    :height: 4.69444in
    :align: center
    
 Figure 17 Technical View - Application
 
-.. image:: _images/media/image21.png
+.. image:: _images/media/fig18-technical-view-infrastructure.png
    :width: 6.25954in
    :height: 5.25078in
    :align: center

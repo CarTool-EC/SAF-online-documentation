@@ -9,7 +9,7 @@ parts. The architecture development using eGovERA follows a similar
 approach as the one for Software Development Lifecycle (SDLC). This can
 be split into the following steps:
 
-.. image:: _images/media/image4.png
+.. image:: _images/media/fig01-development-lifecycle-management.png
    :width: 5.59389in
    :height: 3.0087in
    :align: center
@@ -369,7 +369,7 @@ analysis activities are completed across all tranches before any design
 activity begins. This ensures a complete and stable understanding of
 requirements prior to design.
 
-.. image:: _images/media/image5.png
+.. image:: _images/media/fig02-linear-waterfall-approach.png
    :width: 3.74028in
    :height: 2.95347in
    :align: center
@@ -401,7 +401,7 @@ Example pattern:
 
 -  τ5: Technical – Infrastructure
 
-.. image:: _images/media/image6.png
+.. image:: _images/media/fig03-linear-waterfall-segmentation-by-view.png
    :width: 5.24028in
    :height: 0.29545in
    :align: center
@@ -421,7 +421,7 @@ Example pattern:
 
 -  τ2: DBC2
 
-.. image:: _images/media/image7.png
+.. image:: _images/media/fig04-linear-waterfall-segmentation-by-dbc.png
    :width: 5.61389in
    :height: 0.84848in
    :align: center
@@ -467,7 +467,7 @@ strictly separated phases at the global level. This means that analysis
 must be completed for all planned increments before design activities
 begin.
 
-.. image:: _images/media/image8.png
+.. image:: _images/media/fig05-incremental-waterfall-approach.png
    :width: 3.14722in
    :height: 2.95347in
    :align: center
@@ -499,7 +499,7 @@ Example pattern:
 
 -  Δ5: L, O, S, Ta, Ti
 
-.. image:: _images/media/image9.png
+.. image:: _images/media/fig06-incremental-waterfall-segmentation-by-view.png
    :width: 6.78424in
    :height: 0.23485in
    :align: center
@@ -519,7 +519,7 @@ Example pattern:
 
 -  Δ2: DBC1 + DBC2
 
-.. image:: _images/media/image10.png
+.. image:: _images/media/fig07-incremental-waterfall-segmentation-by-dbc.png
    :width: 7.91145in
    :height: 0.77358in
    :align: center
@@ -567,7 +567,7 @@ In this approach, analysis and design are interleaved. For each tranche,
 analysis is performed first and is immediately followed by design
 activities, which may be iterated multiple times.
 
-.. image:: _images/media/image11.png
+.. image:: _images/media/fig08-linear-agile-approach.png
    :width: 6.84028in
    :height: 1.64653in
    :align: center
@@ -586,7 +586,7 @@ Tranches may also be defined by interoperability views.
 Each view is analysed and designed iteratively before proceeding to the
 next.
 
-.. image:: _images/media/image12.png
+.. image:: _images/media/fig09-linear-agile-segmentation-by-view.png
    :width: 6.22083in
    :height: 0.72014in
    :align: center
@@ -608,7 +608,7 @@ Example pattern:
 
 -  τ2: DBC2 (analysis and design iterations)
 
-.. image:: _images/media/image13.png
+.. image:: _images/media/fig10-linear-agile-segmentation-by-dbc.png
    :width: 6.54388in
    :height: 1.17445in
    :align: center
@@ -652,7 +652,7 @@ In this approach, analysis and design are interleaved within each
 increment. For each increment, analysis is performed and immediately
 followed by design, with possible iterations.
 
-.. image:: _images/media/image14.png
+.. image:: _images/media/fig11-incremental-agile-approach.png
    :width: 6.32708in
    :height: 1.87361in
    :align: center
@@ -672,7 +672,7 @@ interoperability views.
 Each increment adds new views and refines existing ones through
 iterations.
 
-.. image:: _images/media/image15.png
+.. image:: _images/media/fig12-incremental-agile-segmentation-by-view.png
    :width: 6.84722in
    :height: 0.71319in
    :align: center
@@ -692,7 +692,7 @@ Example pattern:
 
 -  Δ2: DBC1 + DBC2
 
-.. image:: _images/media/image16.png
+.. image:: _images/media/fig13-incremental-agile-segmentation-by-dbc.png
    :width: 6.708in
    :height: 1.15226in
    :align: center
